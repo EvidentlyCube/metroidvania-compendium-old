@@ -1,0 +1,18 @@
+increased-jump-height:
+  name: Increased Jump Height
+  description: |
+    Increases the height of the primary jump. May also increase the height of all other types of jumps (eg. [[abi:wall-jump]])
+
+secondary-jumps:
+  name: Secondary Jumps
+  description: |
+    Allows the protagonist to perform a second jump in mid-air. May allow more jumps as part of a single power-up or multiple powerups. May be a collectible, temporary powerup which allows to regenerate the second jump in mid-air (eg. Jumper).
+
+infinite-jump:
+  name: Infinite Jump
+  description: |
+    Variation of [[abi:secondary-jumps]]
+wall-jump:
+  name: Wall Jump
+  description: |
+    Allows jumping off the wall in mid-air. May disallow climbing a single column by pushing the protagonist far away from the wall on jump that they get back to the wall a little lower than where they jumped from.

@@ -1,0 +1,73 @@
+@import '_vars';
+
+.page {
+  padding: 50px 50px;
+}
+
+a {
+  color: $header-color;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-family: 'Monsterrat', 'calibri', 'Verdana', sans-serif;
+  color: $header-color;
+  font-variant: small-caps;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: inherit;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $header-color;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+h1 {
+ }
+
+h1 a {
+  font-size: 52px;
+}
+
+p, span, li {
+  font-family: 'Open Sans', 'Calibri', 'Verdana', sans-serif;
+}
+
+p.description {
+  font-size: 12px;
+  font-style: italic;
+  padding: 0;
+}
+
+.section-body {
+  padding: 0 20px;
+}

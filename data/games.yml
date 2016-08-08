@@ -1,0 +1,147 @@
+metroid-1:
+  name: Metroid
+  series: metroid
+  date: 1986
+  wikiUrl: "https://en.wikipedia.org/wiki/Metroid_(video_game)"
+
+metroid-2:
+  name: "Metroid 2: Return of Samus"
+  series: metroid
+  date: 1991
+  wikiUrl: "https://en.wikipedia.org/wiki/Metroid_II:_Return_of_Samus"
+
+metroid-super:
+  name: Super Metroid
+  series: metroid
+  date: 1994
+  wikiUrl: "https://en.wikipedia.org/wiki/Super_Metroid"
+  abilities:
+    - ability: wall-jump
+      description: Standard Wall Jump which allows vertical climbing, available from the very beginning of the game.
+      url: http://metroid.wikia.com/wiki/Wall_Jump
+
+metroid-fusion:
+  name: Metroid Fusion
+  series: metroid
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+metroid-zero:
+  name: Metroid Zero Mission
+  series: metroid
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+metroid-prime-1:
+  name: Metroid Prime
+  series: metroid
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+metroid-prime-2:
+  name: Metroid Prime 2: Echoes
+  series: metroid
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+metroid-prime-3:
+  name: Metroid Prime 3: Corruption
+  series: metroid
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+metroid-other:
+  name: Metroid Other M
+  series: metroid
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+zelda-1:
+  name: The Legend of Zelda
+  series: zelda
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+zelda-2:
+  name: The Legend of Zelda 2
+  series: zelda
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+zelda-oot:
+  name: Legend of Zelda: Ocarina of Time
+  series: zelda
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+castlevania-sotn:
+  name: Castlevania: Symphony of the Night
+  series: castlevania
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+megaman-zero:
+  name: Megaman Zero
+  series: megaman
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+megaman-zx:
+  name: Megaman ZX
+  series: megaman
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+esa:
+  name: Environment Station Alpha
+  series: other
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+axiom-verge:
+  name: Axiom Verge
+  series: other
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+hero-core:
+  name: Hero Core
+  series: other
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+cave-story:
+  name: Cave Story
+  series: other
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+la-mulana:
+  name: La-mulana
+  series: other
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:
+
+an-untitled-story:
+  name: An Untitled Story
+  series: other
+  date: <TODO>
+  wikiUrl: <TODO>
+  abilities:

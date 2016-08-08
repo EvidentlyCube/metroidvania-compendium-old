@@ -1,0 +1,28 @@
+@import '_vars';
+
+.title-container{
+  margin-bottom: 100px;
+
+  .logo{
+    text-align: center;
+    margin: 20px 0;
+
+    img{
+      width: 10%;
+    }
+  }
+
+  h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    border: none;
+  }
+
+  h2{
+    font-size: 25px;
+    text-align: center;
+    color: #888;
+    margin: 10px 0;
+  }
+}

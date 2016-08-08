@@ -1,0 +1,66 @@
+routing:
+  name: Routing
+  parent: ~
+  description: |
+    These abilities are about unlocking new routes: pathways and passages to new areas and shortcuts to old areas.
+
+range:
+  name: Range (Jumps)
+  parent: routing
+  description: |
+
+speed:
+  name: Speed (Dashes)
+  parent: routing
+  description: |
+
+polymorph:
+  name: Polymorphy
+  parent: routing
+  description: |
+
+mobility:
+  name: General Mobility
+  parent: routing
+  description: |
+
+remove-env:
+  name: Removing Environment
+  parent: routing
+  description: |
+
+ignore-env:
+  name: Ignoring Environment
+  parent: routing
+  description: |
+
+transform-env:
+  name: Transforming Envrionment
+  parent: routing
+  description: |
+
+interact-env:
+  name: Interacting with Environment
+  parent: routing
+  description: |
+
+accessibility:
+  name: Accessiblity
+  parent: ~
+  description: |
+    These abilities are about making the game more accessible:
+
+weapons:
+  name: Weapons
+  parent: accessibility
+  description: |
+
+player-props:
+  name: Player Properties
+  parent: accessibility
+  description: |
+
+world-props:
+  name: World Properties
+  parent: accessibility
+  description: |

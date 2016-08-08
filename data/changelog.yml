@@ -1,0 +1,15 @@
+- date: 08 Aug 2016
+  version: 0.0.62
+  changes: |
+    - List of series and games added
+    - Refactored SCSS
+- date: 08 Aug 2016
+  version: 0.0.40
+  changes: |
+    - Added all sections
+    - Changelog section is now parsed and displayed
+    - Refactored HTML rendering code
+- date: 07 Aug 2016
+  version: 0.0.18
+  changes: |
+    - Document created
