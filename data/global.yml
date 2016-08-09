@@ -1,3 +1,65 @@
 title: Metroidvania Ability Library V.~~~~VERSION~~~~
 description: A library of all abilities found in various Metroidvania games.
 author: Maurycy Zarzycki, Retrocade.net
+preface: |
+  ## [Introduction](#introduction)
+
+  Hello and welcome to Metroidvania Ability Library - a community-driven resource for anyone who:
+
+   - Wants to create their own Metroidvania game and seeks inspiration;
+   - Wants to explore their favorite games from a different angle;
+   - Wants to explore new game design venues;
+   - Has nothing better to do with their time than to read interesting things;
+
+   **Please be warned that this document contains spoilers without any spoiler warnings.** In the future you will be protected by the fact that specific examples of abilities in games will be by default hidden, but this is not present as of yet.
+
+  ## [What is Metroidvania](#what-is-metroidvania)
+
+  > Metroidvania games generally feature a large interconnected world map the player can explore, though access to parts of the world is often limited by doors or other portals that can only be opened after the player has acquired special items, tools, weapons or abilities within the game. Acquiring such improvements can also aid the player in defeating more difficult enemies and locating shortcuts and secret areas, and often includes retracing one's steps across the map.
+  >
+  > Source *[Wikipedia](https://en.wikipedia.org/wiki/Metroidvania)*
+
+  > Your typical Metroidvania game is typically portrayed as a single large area or a set of large areas, broken up into many different rooms, corridors, and open spaces, with [Respawning Enemies](http://tvtropes.org/pmwiki/pmwiki.php/Main/RespawningEnemies "Warning: TV Tropes Link!") in most areas. Progress in the game is driven by the discovery of [Video Game Tools](http://tvtropes.org/pmwiki/pmwiki.php/Main/VideoGameTools "Warning: TV Tropes Link!") (actions, abilities, inventory items) that allow the player to navigate obstacles and "unlock" new areas, while also serving as more than just a "key"; for example, a weapon powerful enough to destroy certain walls will often deal more damage to enemies, and the ability to climb walls could be used to avoid enemies as well as reach high places. The player will often pass many insurmountable obstacles as they explore the game, which they must [backtrack](http://tvtropes.org/pmwiki/pmwiki.php/Main/Backtracking "Warning: TV Tropes Link!") to after finding the appropriate item/ability, often made easier by opening [Doors To Before](http://tvtropes.org/pmwiki/pmwiki.php/Main/DoorToBefore "Warning: TV Tropes Link!").
+  >
+  > Source: *[TV Tropes](http://tvtropes.org/pmwiki/pmwiki.php/Main/Metroidvania)*
+
+  ## [How to contribute](#how-to-contribute)
+
+  ### [Adding content](#adding-content)
+
+  1. If you know how to use [git](https://en.wikipedia.org/wiki/Git_(software)) and know how to read and modify [YAML](https://en.wikipedia.org/wiki/YAML):
+     - Make a [fork of the repository](https://github.com/RetrocadeNet/metroidvania-library);
+     - Clone the repository;
+     - Modify the YML files;
+     - (Optional, requires `grunt-cli`) run `npm install` followed by `grunt` and check your changes in `bin/html/index.html`;
+     - Add your details to `credits.yml` at the bottom;
+     - Make a commit with a meaningful message (don't modify `changelog.yml` yourself);
+     - Post a [Pull Request](https://github.com/RetrocadeNet/metroidvania-library/pulls);
+
+  2. If you have a Github account:
+     - Ensure you are logged in;
+     - Go to the [Issues tab](https://github.com/RetrocadeNet/metroidvania-library/issues) in the repository;
+     - Post a new issue detailing what you'd like added;
+
+  ### [Providing template](#providing-template)
+
+  If you're a capable designer who'd like to donate their time and abilities to support this project please either use [Issues tab](https://github.com/RetrocadeNet/metroidvania-library/issues) to notify me or send me an email directly.
+
+  ## [Roadmap](#roadmap)
+
+  1. **Version 1.0.0:**
+     - All sections of the document contain information
+     - The following games are filled: [[game:metroid-1]], [[game:metroid-2]], [[game:metroid-super]], [[game:metroid-fusion]], [[game:metroid-zero]]
+     - All navigation between the elements works
+     - A script which automatically builds, commits and pushes the built HTML
+     - Toggleable visibility of examples in abilities and games
+  2. **Version 2.0.0:**
+     - Metroid, Castlevania, Megaman series and individual games are all filled
+     - PDF version (?)
+  3. **Version 3.0.0:**
+     - Add "Obstacles" to the list - various ways the different games block the player's progress.
+  4. **Version 4.0.0:**
+     - Add "Sequence breaking" to the list - various ways the different games allow the player to sequence break
+  5. **Version 5.0.0:**
+     - Add "Metapuzzles" to the list - various post-game and in-game option puzzles that
+

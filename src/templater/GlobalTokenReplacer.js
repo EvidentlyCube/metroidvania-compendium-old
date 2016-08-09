@@ -1,6 +1,8 @@
+var MarkdownParser = require('./MarkdownParser');
 var console = require('../console');
 var plural = require('../plural');
 var packageJson = require('../../package.json');
+var linkTokenReplacer = require('./LinkTokenReplacer');
 
 var util = require('util');
 var YAML = require('yamljs');
@@ -45,7 +47,7 @@ function loadTokens() {
     };
 
     _.forEach(data, function (value, key) {
-        newData['~~~~' + key.toUpperCase() + '~~~~'] = value;
+        newData['~~~~' + key.toUpperCase() + '~~~~'] = MarkdownParser.parseGuess(linkTokenReplacer.replace(value));
     });
 
     return newData;

@@ -1,11 +1,11 @@
-var MarkdownIt = new (require('markdown-it'));
+var MarkdownParser = require('../MarkdownParser');
 var _ = require('lodash');
 var util = require('util');
 var fs = require('fs');
 
 var console = require('../../console');
 var globalTokenReplacer = require('./../GlobalTokenReplacer');
-var linkTokenReplacer = require('./HtmlLinkTokenReplacer');
+var linkTokenReplacer = require('../LinkTokenReplacer');
 
 var Category = require('../../model/Category');
 var Series = require('../../model/Series');
@@ -51,6 +51,9 @@ function loadTemplateHtml(){
 
 function renderPreface(){
     appendSectionStart('preface', 'Preface');
+    appendBody('<div class="preface-container">');
+    appendBody('~~~~PREFACE~~~~');
+    appendBody('</div>');
     appendSectionClosure();
 }
 
@@ -87,7 +90,7 @@ function renderCategoryWrapper(depth) {
     function renderCategory(category) {
         console.log(2, util.format('Rendering category %s', category.name));
         appendBody("<div id='category-div-%s' class='category category-depth-%s'>", category.id, depth);
-        appendBody("<h%s id='category-%s'><a href='category-%s'>%s</a></h%s>", depth, category.id, category.id, category.name, depth);
+        appendBody("<h%s id='category-%s'><a href='#category-%s'>%s</a></h%s>", depth, category.id, category.id, category.name, depth);
         appendBody("<p class='description'>%s</p>", category.description);
         if (category.children.length > 0) {
             _.forEach(category.children, renderCategoryWrapper(depth + 1));
@@ -110,7 +113,7 @@ function renderAbilityWrapper(depth) {
     function renderAbility(ability) {
         console.log(3, util.format('Rendering ability %s', ability.name));
         appendBody("<div id='ability-div-%s' class='ability ability-depth-%s'>", ability.id, depth);
-        appendBody("<h5 id='ability-%s'><a href='ability-%s'>%s</a></h5>", ability.id, ability.id, ability.name);
+        appendBody("<h5 id='ability-%s'><a href='#ability-%s'>%s</a></h5>", ability.id, ability.id, ability.name);
         appendBody('<div class="description">%s</div>', parseBlock(ability.description));
         appendBody('<ul class="game-to-ability-list">');
         _.forEach(ability.gameLinks, renderGameWithAbilityWrapper(depth));
@@ -121,7 +124,7 @@ function renderAbilityWrapper(depth) {
     return renderAbility;
 }
 
-function renderGameWithAbilityWrapper(depth){
+function renderGameWithAbilityWrapper(){
     /**
      * @param {GameToAbility} gameToAbility
      */
@@ -181,10 +184,10 @@ function renderChangelogRow(changelog){
 }
 
 function parseBlock(string){
-    return MarkdownIt.render(linkTokenReplacer.replace(string));
+    return MarkdownParser.parseBlock(linkTokenReplacer.replace(string));
 }
 function parseInline(string){
-    return MarkdownIt.renderInline(linkTokenReplacer.replace(string));
+    return MarkdownParser.parseInline(linkTokenReplacer.replace(string));
 }
 function appendSectionStart(sectionId, title){
     console.log(1, util.format('Rendering %s', title));

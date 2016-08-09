@@ -1,0 +1,52 @@
+@import '_vars';
+
+.preface-container{
+  padding-left: 20px;
+  h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  p{
+    margin-bottom: 5px;
+  }
+
+  ul, ol{
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+  li{
+    line-height: 24px;
+  }
+  blockquote {
+    background: #f9f9f9;
+    position: relative;
+    padding: 15px 60px 15px 50px;
+    margin: 20px 0;
+    font-style: italic;
+
+    p:last-child{
+      text-align: right;
+      font-weight: bold;
+      font-style:normal;
+      font-variant: small-caps;
+      margin-top: 20px;
+    }
+  }
+  blockquote:before {
+    content: "\201C";
+    color: #ccc;
+    font-size: 4em;
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+  blockquote:after {
+    content: "\201D";
+    color: #ccc;
+    font-size: 4em;
+    position: absolute;
+    right: 15px;
+    bottom: 17px;
+  }
+}

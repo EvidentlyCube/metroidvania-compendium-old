@@ -1,3 +1,4 @@
+var _ = require('lodash');
 var warnings = require('../warnings');
 
 var collection = [];
@@ -82,5 +83,18 @@ Game.addToCollection = function(game){
 Game.getCollection = function(){
     return collection;
 };
+
+
+/**
+ * @function getById
+ * @param {string} id
+ * @return {Game}
+ */
+Game.getById = function(id){
+    return _.find(collection, function(o){
+        return o.id === id;
+    });
+};
+
 
 module.exports = Game;
