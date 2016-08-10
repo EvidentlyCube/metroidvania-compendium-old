@@ -1,0 +1,22 @@
+enemy-freeze:
+  name: Enemy Freezer
+  description: |
+    A weapon or ability which makes it possible to freeze enemies which then can be used as platforms.
+  variants:
+    - Frozen enemies may float in the air.
+    - Frozen enemies may fall to the ground.
+    - Frozen enemies thaw after some time and a single enemy can be used multiple times.
+    - Some types of enemies can only be destroyed when frozen first.
+
+key:
+  name: Key
+  description: |
+    A generic type of item or non-item that has no active nor passive effect except for unlocking a scripted passage.
+  variants:
+   - "May take the form of: closed door which opens, wall which is removed, boss/enemy which was previously unkillable/unfightable, path/bridge/wall which allows traversing to a previously inaccessible area."
+   - Can unlock a single place or multiple places, eg. all red doors, all blocks with a skull.
+   - Can be acquired by defeating a boss.
+   - Can be acquired by defeating a specific enemy or a number of them.
+   - Can be acquired by collecting an item or a number of them.
+   - Can be acquired by reaching a specific room/place.
+   - Can be acquired by a point in the story.

@@ -3,6 +3,7 @@ metroid-1:
   series: metroid
   date: 1986
   wikiUrl: "https://en.wikipedia.org/wiki/Metroid_(video_game)"
+  isCompleted: true
   abilities:
     - ability: health
       prettyName: Energy
@@ -24,12 +25,44 @@ metroid-1:
       url: http://metroid.wikia.com/wiki/Missile
     - ability: weapon-range
       prettyName: Long Beam
-      description: "Increases the range of the beam. The power-up is completely optional."
+      description: "Increases the range of the beam. *In this game the protagonist can only have a single beam active!*"
       url: http://metroid.wikia.com/wiki/Long_Beam
     - ability: health-expansion
       prettyName: Energy Tank
       description: "Increases the maximum HP by 100, a total of 6 can be collected in various hidden places."
       url: http://metroid.wikia.com/wiki/Energy_Tank
+    - ability: bombs
+      description: "Can be placed in [[abi:morph-ball]] form and used to destroy specific types of blocks and to jump."
+      url: http://metroid.wikia.com/wiki/Bomb
+    - ability: enemy-freeze
+      prettyName: Ice Beam
+      description: "Allows freezing enemies and using them as platforms. *In this game the protagonist can only have a single beam active!*"
+      url: http://metroid.wikia.com/wiki/Ice_Beam
+    - ability: increased-jump-height
+      prettyName: High Jump Boots
+      description: "Increases the protagonist's jump height significantly."
+      url: http://metroid.wikia.com/wiki/High_Jump_Boots
+    - ability: damage-reduction
+      prettyName: Varia Suit
+      description: "Reduces damage taken by 50%."
+      url: http://metroid.wikia.com/wiki/Varia_Suit
+    - ability: secondary-destroyer
+      prettyName: Screw Attack
+      description: "A touch attack which only works during spin jump, can destroy enemies and specific types of blocks."
+      url: http://metroid.wikia.com/wiki/Screw_Attack
+    - ability: touch-weapon
+      prettyName: Screw Attack
+      description: "A touch attack which only works during spin jump, can destroy enemies and specific types of blocks."
+      url: http://metroid.wikia.com/wiki/Screw_Attack
+    - ability: transparent-weapon
+      prettyName: Wave Beam
+      description: "A beam that passess through walls and enemies. *In this game the protagonist can only have a single beam active!*"
+      url: http://metroid.wikia.com/wiki/Wave_Beam
+    - ability: key
+      prettyName: Stone Statues
+      description: "The player must defeat both Kraid and Ridley for their statues to rise in a specific room and a bridge to form which gives access to the final area of the game."
+      url: http://metroid.wikia.com/wiki/Stone_Statues
+
 
 #metroid-2:
 #  name: "Metroid 2: Return of Samus"

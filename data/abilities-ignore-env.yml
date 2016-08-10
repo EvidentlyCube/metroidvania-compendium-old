@@ -1,0 +1,14 @@
+background-damage-ignore:
+  name: Background Damage Ignore
+  description: |
+    Ignores specific type of background damage dealt in a given area, eg. from radiation, heat, cold, acidity, toxicity.
+  variants:
+    - The game may be made possible to be completed without this power-up via use of sequence breaking.
+
+transparent-weapon:
+  name: Transparent Projectiles
+  description: |
+    A type of projectile that passes through all kinds of environment and allows destroying previously unaccessible enemies, blocks or background elements and interacting with switches.
+  variants:
+   - May only go through certain types of blocks.
+   - May not go through enemies.

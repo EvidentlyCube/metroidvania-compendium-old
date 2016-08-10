@@ -1,5 +1,10 @@
-- date: 10 Aug 2016
+- date: 11 Aug 2016
   version: ~~~~VERSION~~~~
+  changes: |
+    - Finished [[game:metroid-1]]
+    - Fixed anchor position for ability names
+- date: 10 Aug 2016
+  version: 0.1.100
   changes: |
     - Mostly finalized the content of Preface
     - Added "prettyName" to games' abilities to showcase the actual in-game name used for an ability

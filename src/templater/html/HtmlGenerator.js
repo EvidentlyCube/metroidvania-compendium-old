@@ -118,7 +118,7 @@ function renderAbilityWrapper(depth) {
     function renderAbility(ability) {
         console.log(3, util.format('Rendering ability %s', ability.name));
         appendBody("<div id='ability-div-%s' class='ability ability-depth-%s'>", ability.id, depth);
-        appendBody("<h5 id='ability-%s'><a href='#ability-%s'>%s</a> ", ability.id, ability.id, ability.name);
+        appendBody("<h5><span id='ability-%s' class='anchor'></span><a href='#ability-%s'>%s</a> ", ability.id, ability.id, ability.name);
 		if (ability.variants.length > 0){
 			appendBody('<button class="show-variants" data-alt-text="Hide variants">Show variants</button>')
 		}

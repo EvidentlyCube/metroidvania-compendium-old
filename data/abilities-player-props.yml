@@ -12,9 +12,18 @@ health:
     - May be expanded by collecting (optional) power-ups.
     
 health-expansion:
-  name: Health expansion
+  name: Health Expansion
   description: |
     A power-up which increases the max health of the protagonist.
   variants:
     - Might be in the form of a collectible power-up.
     - Might be awarded at specific plot-points.
+
+damage-reduction:
+  name: Damage Reduction
+  description: |
+    Reduces the damage dealt to the player.
+  variants:
+    - Might reduce all damage by a percent or a flat number.
+    - Might completely mitigate damage from certain sources.
+    - Might provide protection only in certain cases.

@@ -18,3 +18,22 @@ strong-weapon:
     - May have limited ammo.
     - Ammo may be dropped by killed enemies.
     - Ammo may be only restorable in specific spots.
+
+bombs:
+  name: Bombs
+  description: |
+    A placeable stationary explosive which destroys specific types of blocks and damages enemies.
+  variants:
+    - May only be used in special circumstances, eg. [[abi:morph-ball]].
+    - May only allow a limited number of bombs to be placed at the same time.
+    - May make the player jump on explosion.
+    - May be used to do repeated/infinite bomb jumps to reach the ceiling.
+
+secondary-destroyer:
+  name: Secondary Destroyer
+  description: |
+    A catch-all for all other generic types of attacks which unlock new routes by being the only tool to destroy a block/enemy, but the way they are used is not sufficiently different/unique to warrant a separate category.
+  variants:
+   - A touch attack.
+   - A touch attack which only works while jumping.
+   - A touch attack which only works when protagonist's weapon is charged, and on hit the charge may be lost.

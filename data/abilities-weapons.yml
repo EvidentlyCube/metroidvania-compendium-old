@@ -4,3 +4,13 @@ weapon-range:
     Increases primary/secondary weapons range which makes it easier to defeat enemies.
   variants:
     - May allow destroying blocks and enemies which are further away from the player using [[abi:weapon]].
+
+touch-weapon:
+  name: Touch Weapon
+  description: |
+    A weapon or an intrinsic attack which deals damage on touch.
+  variants:
+   - May be activated, time limited and with limited uses.
+   - Limited uses may recharge automatically, need collecting bonuses or reaching a checkpoint.
+   - May work only when jumping.
+   - May work only when protagonist's weapon is charged, and on hit the charge may be lost.
