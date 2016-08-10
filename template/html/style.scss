@@ -136,3 +136,15 @@ button.show-examples{
 .game{
   margin-bottom: 20px;
 }
+
+.credits-container{
+  ul{
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  li{
+    list-style: circle;
+    line-height: 22px;
+  }
+}

@@ -17,6 +17,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: normal;
   text-decoration: none;
   font-style: inherit;
+  position: relative;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
@@ -72,4 +73,10 @@ p.description {
 
 .section-body {
   padding: 0 20px;
+}
+
+span.anchor{
+  position: absolute;
+  visibility: hidden;
+  top: -100px;
 }

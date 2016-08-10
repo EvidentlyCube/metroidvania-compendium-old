@@ -9,6 +9,7 @@ var linkTokenReplacer = require('../LinkTokenReplacer');
 
 var Category = require('../../model/Category');
 var Series = require('../../model/Series');
+var Credits = require('../../model/Credits');
 var Changelog = require('../../model/Changelog');
 
 
@@ -71,6 +72,10 @@ function renderGamesList(){
 
 function renderCredits(){
     appendSectionStart('credits', 'Credits');
+    appendBody('~~~~CREDITS-DESCRIPTION~~~~');
+    appendBody('<ul>');
+    _.forEach(Credits.getCollection(), renderCreditsRow);
+    appendBody('</ul>');
     appendSectionClosure();
 }
 
@@ -202,13 +207,21 @@ function renderAbilityInGame(gameToAbility, index){
     appendBody("</li>");
 }
 /**
+ * @param {Credits} credits
+ */
+function renderCreditsRow(credits, index){
+    console.log(2, util.format('Rendering credits #%s', index));
+    appendBody('<li><strong>%s</strong> - %s</li>', credits.name, credits.contribution)
+}
+/**
  * @param {Changelog} changelog
  */
-function renderChangelogRow(changelog){
+function renderChangelogRow(changelog, index){
+    console.log(2, util.format('Rendering changelog #%s', index));
     appendBody('<div class="changelog">');
-    appendBody('<h4><strong>Version %s:</strong> %s</h4>', changelog.version, changelog.date);
+    appendBody('<h4><strong>Version %s:</strong> %s</h4>', globalTokenReplacer(changelog.version), globalTokenReplacer(changelog.date));
     appendBody('<div class="changelog-body">');
-    appendBody(parseBlock(changelog.changes));
+    appendBody(parseBlock(globalTokenReplacer(changelog.changes)));
     appendBody('</div>');
     appendBody('</div>');
 }
@@ -222,7 +235,7 @@ function parseInline(string){
 function appendSectionStart(sectionId, title){
     console.log(1, util.format('Rendering %s', title));
     appendBody('<div class="%s-container section-container">', sectionId);
-    appendBody('<h1 id="%s"><a href="#%s">%s</a></h1>', sectionId, sectionId, title);
+    appendBody('<h1><span id="%s" class="anchor"></span><a href="#%s">%s</a></h1>', sectionId, sectionId, title);
     appendBody('<div class="section-body">');
 }
 function appendSectionClosure(){

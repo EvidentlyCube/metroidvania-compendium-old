@@ -3,23 +3,23 @@ metroid:
     desc: |
         Metroid (**Japanese**: メトロイド **Hepburn**: Metoroido) is a science fiction action-adventure video game series created by Nintendo.
     wikiUrl: "https://en.wikipedia.org/wiki/Metroid"
-zelda:
-    name: Legend of Zelda Series
-    desc: |
-        The Legend of Zelda (Japanese: ゼルダの伝説 Hepburn: Zeruda no Densetsu?) is a high-fantasy action-adventure video game series created by Japanese game designers Shigeru Miyamoto and Takashi Tezuka.
-    wikiUrl: "https://en.wikipedia.org/wiki/The_Legend_of_Zelda"
-castlevania:
-  name: Castlevania Series
-  desc: |
-    <TODO>
-  wikiUrl: <TODO>
-megaman:
-  name: Megaman Series
-  desc: |
-    <TODO>
-  wikiUrl: <TODO>
-other:
-  name: Individual Games
-  desc: |
-    <TODO>
-  wikiUrl: <TODO>
+#zelda:
+#    name: Legend of Zelda Series
+#    desc: |
+#        The Legend of Zelda (Japanese: ゼルダの伝説 Hepburn: Zeruda no Densetsu?) is a high-fantasy action-adventure video game series created by Japanese game designers Shigeru Miyamoto and Takashi Tezuka.
+#    wikiUrl: "https://en.wikipedia.org/wiki/The_Legend_of_Zelda"
+#castlevania:
+#  name: Castlevania Series
+#  desc: |
+#    <TODO>
+#  wikiUrl: <TODO>
+#megaman:
+#  name: Megaman Series
+#  desc: |
+#    <TODO>
+#  wikiUrl: <TODO>
+#other:
+#  name: Individual Games
+#  desc: |
+#    <TODO>
+#  wikiUrl: <TODO>

@@ -1,6 +1,8 @@
 title: Metroidvania Ability Library V.~~~~VERSION~~~~
 description: A library of all abilities found in various Metroidvania games.
 author: Maurycy Zarzycki, Retrocade.net
+credits-description: |
+  The following people are to be thanked for creating or helping in creating this document. With the exception of people who provided exceptional support it's in the order they were added:
 preface: |
   ## [Introduction](#introduction)
 
@@ -49,7 +51,7 @@ preface: |
 
   1. **Version 1.0.0:**
      - All sections of the document contain information
-     - The following games are filled: [[game:metroid-1]], [[game:metroid-2]], [[game:metroid-super]], [[game:metroid-fusion]], [[game:metroid-zero]]
+     - The following games are filled: [[game:metroid-1]], Metroid 2, Super Metroid, Metroid Fusion and Metroid Zero Mission
      - All navigation between the elements works
      - A script which automatically builds, commits and pushes the built HTML
      - Toggleable visibility of examples in abilities and games
@@ -61,5 +63,4 @@ preface: |
   4. **Version 4.0.0:**
      - Add "Sequence breaking" to the list - various ways the different games allow the player to sequence break
   5. **Version 5.0.0:**
-     - Add "Metapuzzles" to the list - various post-game and in-game option puzzles that
-
+     - Add "Metapuzzles" to the list - various post-game and mid-game optional puzzles
