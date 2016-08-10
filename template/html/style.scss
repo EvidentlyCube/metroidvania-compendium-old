@@ -17,6 +17,7 @@ p.description{
 }
 
 ul.game-to-ability-list{
+  display: none;
   margin-top: 10px;
   padding-left: 30px;
 
@@ -48,6 +49,9 @@ ul.game-to-ability-list{
   padding-left: 20px;
   margin-bottom: 20px;
 }
+.ability-body{
+  padding-left: 20px;
+}
 .category-depth-1{
   background: $container-bg;
   padding: 20px;
@@ -55,9 +59,67 @@ ul.game-to-ability-list{
   border-radius: 10px;
 }
 .ability h5, .ability h5 a{
-  font-size: 18px;
+  font-size: 24px;
   color: #666;
   font-style: italic;
+}
+
+button.show-variants,
+button.show-examples{    
+	border: none;
+    color: #fff;
+    font-family: Monsterrat,calibri,Verdana,sans-serif;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding: 1px 0;
+    font-size: 14px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    vertical-align: middle;
+	width: 150px;
+	
+	&.show-variants{
+		background: brown;
+		border-color: brown;
+	}
+	
+	&.show-variants.toggled{
+		background: white;
+		color: black;
+		border-width: 1px;
+		border-style: solid;
+	}
+	&.show-examples{
+		background: darkmagenta;
+		border-color: darkmagenta;
+	}
+	&.show-examples.toggled{
+		background: white;
+		color: black;
+		border-width: 1px;
+		border-style: solid;
+	}
+}
+
+.variants-container{
+	display: none;
+	padding-left: 20px;
+	padding-top: 10px;
+	
+	span.variant {
+		display: table;
+		font-size: 15px;
+		line-height: 23px;
+		background: bisque;
+		border-radius: 5px;
+		padding: 2px 20px;
+		width: auto;
+		margin-bottom: 5px;
+	}
+	span.variant:last-child{
+		margin-bottom: 0;
+	}
 }
 
 .ability p{

@@ -1,0 +1,43 @@
+jump:
+  name: Jump
+  description: |
+    The regular ability to jump. In almost any platformer game it's an intrinsic ability of the protagonist.
+  variants:
+    - May be used in top-down games as a time-to-time or regular mechanic for added gameplay.
+    - May be used in non-action games (like RPGs or 3/4 perspective games).
+    - May be an ability that needs to be collected by the protagonist.
+
+increased-jump-height:
+  name: Increased Jump Height
+  description: |
+    Increases the height of the primary [[abi:jump]].
+  variants:
+    - May also increase the height of all other types of jumps (eg. [[abi:wall-jump]], [[abi:secondary-jumps]]).
+
+secondary-jumps:
+  name: Secondary Jumps
+  description: |
+    Allows the protagonist to perform a second jump in mid-air. 
+  variants:
+    - May allow more jumps as part of a single power-up or other powerups.
+    - May include a collectible which regenerates the secondary jump in mid-air.
+
+infinite-jump:
+  name: Infinite Jump
+  description: |
+    Variation of [[abi:secondary-jumps]], gives the protagonist the ability to jump in mid-air indefinitely.
+  variants:
+   - May be paused/stopped when protagonist is damaged, making it possible to restart only after landing.
+   - May only allow moving vertically up, being stopped after moving horizontally and then requiring landing to restart.
+   - May only allow moving in a single diagonal direction to limit its usability.
+  
+wall-jump:
+  name: Wall Jump
+  description: |
+    Allows jumping off the wall in mid-air.
+  variants:
+    - May disallow climbing a single column by pushing the protagonist far away from the wall on jump that they get back to the wall a little lower than where they jumped from.
+    - May only allow jumping off specific types of walls/disallow jumping off specific types of walls.
+    - May allow climbing a vertical column indefinitely.
+    - May be limited to a single wall-jump between landings.
+    - May completely disallow returning back to the wall that was jumped off by forcing inertial movement until landing (makes it really hard to aim).

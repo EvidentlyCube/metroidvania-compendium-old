@@ -1,0 +1,6 @@
+weapon-range:
+  name: Weapon Range
+  description: |
+    Increases primary/secondary weapons range which makes it easier to defeat enemies.
+  variants:
+    - May allow destroying blocks and enemies which are further away from the player using [[abi:weapon]].

@@ -3,6 +3,33 @@ metroid-1:
   series: metroid
   date: 1986
   wikiUrl: "https://en.wikipedia.org/wiki/Metroid_(video_game)"
+  abilities:
+    - ability: health
+      prettyName: Energy
+      description: "Starts at 99HP, damage is dealt by touching enemies and their projectiles and can be restored by drops left from killing the enemies. Losing all *Energy* results in death."
+      url: http://metroid.wikia.com/wiki/Energy
+    - ability: jump
+      description: A regular jump, available from the beginning of the game. Has two versions - regular jump and spin jump. The latter is executed when the protagonist jumps while running and allows for greater speed in the air. Firing the weapon while performing a spin jump ends it.
+      url: http://metroid.wikia.com/wiki/Spin_Jump
+    - ability: weapon
+      prettyName: Beam
+      description: "Can be used to destroy enemies and blocks which unlock new passages."
+      url: http://metroid.wikia.com/wiki/Beam
+    - ability: morph-ball
+      description: "Makes the protagonist morph into a ball, effectively halving Samus's height, disabling [[abi:jump]] and weapon. Allows passing through narrow passages."
+      url: http://metroid.wikia.com/wiki/Morph_Ball
+    - ability: strong-weapon
+      prettyName: Missiles
+      description: "Can be used to open red gates and deal more damage to enemies. They have limited ammo that is dropped by enemies and the ammo limit can be expanded."
+      url: http://metroid.wikia.com/wiki/Missile
+    - ability: weapon-range
+      prettyName: Long Beam
+      description: "Increases the range of the beam. The power-up is completely optional."
+      url: http://metroid.wikia.com/wiki/Long_Beam
+    - ability: health-expansion
+      prettyName: Energy Tank
+      description: "Increases the maximum HP by 100, a total of 6 can be collected in various hidden places."
+      url: http://metroid.wikia.com/wiki/Energy_Tank
 
 metroid-2:
   name: "Metroid 2: Return of Samus"

@@ -113,24 +113,46 @@ function renderAbilityWrapper(depth) {
     function renderAbility(ability) {
         console.log(3, util.format('Rendering ability %s', ability.name));
         appendBody("<div id='ability-div-%s' class='ability ability-depth-%s'>", ability.id, depth);
-        appendBody("<h5 id='ability-%s'><a href='#ability-%s'>%s</a></h5>", ability.id, ability.id, ability.name);
+        appendBody("<h5 id='ability-%s'><a href='#ability-%s'>%s</a> ", ability.id, ability.id, ability.name);
+		if (ability.variants.length > 0){
+			appendBody('<button class="show-variants" data-alt-text="Hide variants">Show variants</button>')
+		}
+		if (ability.gameLinks.length > 0){
+			appendBody('<button class="show-examples" data-alt-text="Hide examples">Show examples</button>')
+		}
+		appendBody('</h5>');
+		appendBody('<div class="ability-body">');
         appendBody('<div class="description">%s</div>', parseBlock(ability.description));
-        appendBody('<ul class="game-to-ability-list">');
+		appendBody('<div class="variants-container">');
+		_.forEach(ability.variants, renderAbilityVariant);
+        appendBody('</div>');
+		appendBody('<ul class="game-to-ability-list examples">');
         _.forEach(ability.gameLinks, renderGameWithAbilityWrapper(depth));
         appendBody('</ul>');
         appendBody('</div>');
+		appendBody('</div>');
     }
 
     return renderAbility;
 }
 
+/**
+ * @param {string} variant
+ */
+function renderAbilityVariant(variant, index){
+	console.log(4, util.format("Rendering variant #%s", index + 1));
+	appendBody('<span class="variant">%s</span>', parseInline(variant));
+}
+
 function renderGameWithAbilityWrapper(){
     /**
      * @param {GameToAbility} gameToAbility
+	 * @param {number} index
      */
-    function renderGameToAbility(gameToAbility){
+    function renderGameToAbility(gameToAbility, index){
+        console.log(4, util.format('Rendering game with ability #%s', index + 1));
         appendBody("<li class='game-to-ability'>");
-        appendBody('<a class="game-name" href="#game-%s">%s</a>: ', gameToAbility.game.id, gameToAbility.game.name);
+        appendBody('<a class="game-name" href="#game-%s">%s</a> ', gameToAbility.game.id, gameToAbility.game.name);
         appendBody(parseInline(gameToAbility.description));
         appendBody("</li>");
     }
@@ -142,6 +164,7 @@ function renderGameWithAbilityWrapper(){
  * @param {Series} series
  */
 function renderSeries(series){
+	console.log(2, util.format('Rendering series %s (%s)', series.name, series.id));
     appendBody('<div class="series">');
     appendBody('<h2 id="series-%s"><a href="#series-%s">%s</a></h2>', series.id, series.id, series.name);
     appendBody('<div class="series-body">');
@@ -154,9 +177,14 @@ function renderSeries(series){
  * @param {Game} game
  */
 function renderGame(game){
+	console.log(3, util.format('Rendering game %s (%s)', game.name, game.id));
     appendBody('<div class="game">');
-    appendBody('<h3 id="game-%s"><a href="#game-%s">%s (%s)</a> <a href="%s">[wiki]</a></h3>', game.id, game.id, game.name, game.date, game.wikiUrl);
-    appendBody('<ul class="game-to-ability-list">');
+    appendBody('<h3 id="game-%s"><a href="#game-%s">%s (%s)</a> <a href="%s">[wiki]</a>', game.id, game.id, game.name, game.date, game.wikiUrl);
+	if (game.abilityLinks.length > 0){
+		appendBody('<button class="show-examples" data-alt-text="Hide abilities">Show abilities</button>')
+	}
+	appendBody('</h3>');
+    appendBody('<ul class="game-to-ability-list examples">');
     _.forEach(game.abilityLinks, renderAbilityInGame);
     appendBody('</ul>');
     appendBody('</div>');
@@ -164,10 +192,12 @@ function renderGame(game){
 
 /**
  * @param {GameToAbility} gameToAbility
+ * @param {number} index
  */
-function renderAbilityInGame(gameToAbility){
+function renderAbilityInGame(gameToAbility, index){
+	console.log(4, util.format('Rendering ability in game #%s', index + 1));
     appendBody("<li class='game-to-ability'>");
-    appendBody('<a class="ability-name" href="#ability-%s">%s</a>: ', gameToAbility.ability.id, gameToAbility.ability.name);
+    appendBody('<a class="ability-name" href="#ability-%s">%s</a> ', gameToAbility.ability.id, gameToAbility.getFullName());
     appendBody(parseInline(gameToAbility.description));
     appendBody("</li>");
 }

@@ -1,0 +1,4 @@
+morph-ball:
+  name: Morph Ball
+  description: |
+    Halves the protagonist height, disables most other abilities like [[abi:jump]] or regular weapons. Appears exclusively in [[series:metroid]]. Allows passing through narrow passages.

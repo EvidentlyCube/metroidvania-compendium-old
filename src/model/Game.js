@@ -16,6 +16,7 @@ var collection = [];
 /**
  * @typedef {Object} GameAbilityRow
  * @property {string} ability
+ * @property {string} prettyName
  * @property {string} description
  * @property {string} url
  */

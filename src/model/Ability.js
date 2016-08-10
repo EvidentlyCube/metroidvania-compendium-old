@@ -5,6 +5,7 @@ var collection = [];
  * @typedef {Object} AbilityRow
  * @property {string} name
  * @property {string} description
+ * @property {Array.<string>} variants
  */
 
 /**
@@ -12,10 +13,11 @@ var collection = [];
  * @param {string} id
  * @param {string} name
  * @param {string} description
+ * @param {Array.<string>} variants
  * @param {Category} category
  * @constructor
  */
-var Ability = function constructor(id, name, description, category){
+var Ability = function constructor(id, name, description, variants, category){
     /** @member {string} */
     this.id = id;
 
@@ -24,6 +26,9 @@ var Ability = function constructor(id, name, description, category){
 
     /** @member {string} */
     this.description = description;
+	
+	/** @member {Array.<string>} */
+	this.variants = variants || [];
 
     /** @member {Category} */
     this.category = category;

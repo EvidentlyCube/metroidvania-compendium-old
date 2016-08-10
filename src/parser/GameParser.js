@@ -30,7 +30,7 @@ function parseGameRow(gameRow, key){
     console.log(2, util.format("Parsing row: %s (%s)", gameRow.name, key));
     var series = Series.getById(gameRow.series);
     ASSERT(series, "Game %s (%s) belongs to series '%s' which does not exist.", gameRow.name, key, gameRow.series);
-    var game = new Game(key, gameRow.name, series, parseInt(gameRow.date), gameRow.wikiUrl);
+    var game = new Game(key, gameRow.name, series, parseInt(gameRow.date), gameRow.isCompleted, gameRow.wikiUrl);
     series.games.push(game);
     Game.addToCollection(game);
 
@@ -54,7 +54,7 @@ function parseAbilityRowWrapper(game){
     function parseAbilityRow(abilityRow, key){
         var ability = Ability.getById(abilityRow.ability);
         ASSERT(ability, "Game %s has ability %s which does not exist.", game.name, abilityRow.ability);
-        var gameToAbility = new GameToAbility(game, ability, abilityRow.url, abilityRow.description);
+        var gameToAbility = new GameToAbility(game, ability, abilityRow.prettyName, abilityRow.url, abilityRow.description);
         game.abilityLinks.push(gameToAbility);
         ability.gameLinks.push(gameToAbility);
         console.green(3, util.format("Parsed ability %s", abilityRow.ability));

@@ -2,6 +2,9 @@
   version: 0.1.0
   changes: |
     - Mostly finalized the content of Preface
+    - Added "prettyName" to games' abilities to showcase the actual in-game name used for an ability
+    - Added variants to abilities which list how they [can be played](http://tvtropes.org/pmwiki/pmwiki.php/Main/PlayingWithATrope "Warning: TV Tropes Link!")
+    - Added buttons to show variants and examples of abilities/games
 - date: 08 Aug 2016
   version: 0.0.62
   changes: |

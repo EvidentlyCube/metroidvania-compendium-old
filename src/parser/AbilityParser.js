@@ -7,6 +7,15 @@ var plural = require('../plural');
 var Ability = require('../model/Ability');
 var Category = require('../model/Category');
 
+module.exports = {
+    run: run
+};
+
+function run(){
+	console.header(0, "Parse Abilities");
+
+	_.forEach(Category.getCollection(), parseAbilitiesForCategory)
+}
 
 /**
  * @param {Category} category
@@ -47,7 +56,7 @@ function parseAbilityRowWrapper(category){
      */
     function parseAbilityRow(abilityRow, key){
         console.log(3, util.format("Parsing row: %s (%s)", abilityRow.name, key));
-        var ability = new Ability(key, abilityRow.name, abilityRow.description, category);
+        var ability = new Ability(key, abilityRow.name, abilityRow.description, abilityRow.variants, category);
         category.abilities.push(ability);
         Ability.addToCollection(ability);
     }
@@ -67,11 +76,3 @@ function loadData(fileName){
 
     return data;
 }
-
-module.exports = {
-    run: function () {
-        console.header(0, "Parse Abilities");
-
-        _.forEach(Category.getCollection(), parseAbilitiesForCategory)
-    }
-};

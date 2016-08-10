@@ -1,0 +1,20 @@
+weapon:
+  name: Weapon
+  description: |
+    A regular weapon given out to the protagonist out of the box. Can be used to remove enemies or specific types of walls to allow progress. Can also be used to toggle switches.
+  variants:
+    - Range may be extended to allow reaching further blocks, enemies and switches via [[abi:weapon-range]].
+    - May be unavailable at the beginning of the game.
+    - May not be included in the game at all.
+    - May stun or only push-back enemies instead of damaging them.
+    
+strong-weapon:
+  name: Strong Weapon
+  description: |
+    A special type of secondary weapon which allows destroying new types of obstacles.
+  variants:
+    - May destroy specific types of walls or gateways.
+    - May have multiple variants, eg. Missile and Super Missile, each destroying their own types of blocks.
+    - May have limited ammo.
+    - Ammo may be dropped by killed enemies.
+    - Ammo may be only restorable in specific spots.

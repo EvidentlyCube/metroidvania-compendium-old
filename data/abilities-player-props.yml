@@ -1,0 +1,20 @@
+health:
+  name: Health
+  description: |
+    Health is a protagonist property that can be reduced by touching enemies, projectiles, environment or the background. Usually when reduced to zero the protagonist dies and a save has to loaded.
+  variants:
+    - 'Game might not have any health and the player will be a [One-Hit-Point Wonder](http://tvtropes.org/pmwiki/pmwiki.php/Main/OneHitPointWonder "Warning: TV Tropes Link!").'
+    - May be restored by drops from the enemies.
+    - May be restored by saving the game.
+    - May restore itself in the background.
+    - May restore itself in specific plot-points in the game.
+    - May be non-restorable.
+    - May be expanded by collecting (optional) power-ups.
+    
+health-expansion:
+  name: Health expansion
+  description: |
+    A power-up which increases the max health of the protagonist.
+  variants:
+    - Might be in the form of a collectible power-up.
+    - Might be awarded at specific plot-points.

@@ -4,16 +4,16 @@ routing:
   description: |
     These abilities are about unlocking new routes: pathways and passages to new areas and shortcuts to old areas.
 
-range:
-  name: Range (Jumps)
+jump:
+  name: Jumping
   parent: routing
   description: |
 
-speed:
-  name: Speed (Dashes)
+dash:
+  name: Dashing/Running
   parent: routing
   description: |
-
+  
 polymorph:
   name: Polymorphy
   parent: routing
