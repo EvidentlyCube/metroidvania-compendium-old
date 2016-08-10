@@ -4,4 +4,4 @@ A collection of all the abilities and skills present in various metroidvania gam
 
 ## How to contribute
 
-Fork the repository and make a [pull request](https://github.com/RetrocadeNet/metroidvania-library/pulls), as simple as that. Alternatively use the [issues board](https://github.com/RetrocadeNet/metroidvania-library/issues).
+Fork the repository and make a [pull request](https://github.com/RetrocadeNet/metroidvania-compendium/pulls), as simple as that. Alternatively use the [issues board](https://github.com/RetrocadeNet/metroidvania-compendium/issues).

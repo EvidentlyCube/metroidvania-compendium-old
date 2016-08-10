@@ -11,7 +11,9 @@ var _ = require('lodash');
 var tokens;
 var lastConsoleDepth;
 
-module.exports = function (string, customTokens) {
+module.exports = replace;
+
+function replace(string, customTokens) {
     if (typeof customTokens === "undefined"){
         customTokens = [];
     }
@@ -19,7 +21,7 @@ module.exports = function (string, customTokens) {
     lastConsoleDepth = Math.max(1, console.getLastDepth());
     console.header(lastConsoleDepth, "Replacing global tokens");
     if (!tokens) {
-        tokens = loadTokens();
+        loadTokens();
     }
 
     var mergedTokens = {};
@@ -35,22 +37,20 @@ module.exports = function (string, customTokens) {
     return string;
 };
 
+
 function loadTokens() {
+    tokens = {
+        '~~~~VERSION~~~~': packageJson.version,
+        '~~~~VERSIONDATE~~~~': packageJson.versionDate
+    };
     console.log(lastConsoleDepth + 1, "Loading global tokens");
     var data = YAML.load('data/global.yml', null, true);
     var dataCount = _.size(data);
     console.green(lastConsoleDepth + 1, util.format('File parsed, %d %s', dataCount, plural(dataCount, 'entry', 'entries')));
 
-    var newData = {
-        '~~~~VERSION~~~~': packageJson.version,
-        '~~~~VERSIONDATE~~~~': packageJson.versionDate
-    };
-
     _.forEach(data, function (value, key) {
-        newData['~~~~' + key.toUpperCase() + '~~~~'] = MarkdownParser.parseGuess(linkTokenReplacer.replace(value));
+        tokens['~~~~' + key.toUpperCase() + '~~~~'] = MarkdownParser.parseGuess(replace(linkTokenReplacer.replace(value)));
     });
-
-    return newData;
 }
 
 function replaceGlobalTokens(string, tokens) {
