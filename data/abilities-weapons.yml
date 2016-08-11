@@ -10,7 +10,20 @@ touch-weapon:
   description: |
     A weapon or an intrinsic attack which deals damage on touch.
   variants:
-   - May be activated, time limited and with limited uses.
-   - Limited uses may recharge automatically, need collecting bonuses or reaching a checkpoint.
-   - May work only when jumping.
-   - May work only when protagonist's weapon is charged, and on hit the charge may be lost.
+    - May be activated, time limited and with limited uses.
+    - Limited uses may recharge automatically, need collecting bonuses or reaching a checkpoint.
+    - May work only when jumping.
+    - May work only when protagonist's weapon is charged, and on hit the charge may be lost (see: [[abi:charge-weapon]]).
+   
+charge-weapon:
+  name: Charge Weapon
+  description: |
+    Ability to charge a weapon which increases its damage.
+  variants:
+    - May be available from the very beginning or collectible.
+    - Collecting this power-up may also improve power of regular shot.
+    - May allow charging other weapons that the primary one.
+    - May grant [[abi:touch-weapon]] when charged.
+    - Some enemies may only be damaged by charged shot.
+    - Charge duration may be reduced by additional power-ups.
+    - May change weapon's properties when charged - added explosion, passing through walls, destroying specific blocks.

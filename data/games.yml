@@ -17,12 +17,16 @@ metroid-1:
       description: "Can be used to destroy enemies and blocks which unlock new passages."
       url: http://metroid.wikia.com/wiki/Beam
     - ability: morph-ball
-      description: "Makes the protagonist morph into a ball, effectively halving Samus's height, disabling [[abi:jump]] and weapon. Allows passing through narrow passages."
+      description: "Makes the protagonist morph into a ball, effectively halving Samus's height, disabling [[abi:jump]] and [[abi:weapon]]. Allows passing through narrow passages."
       url: http://metroid.wikia.com/wiki/Morph_Ball
     - ability: strong-weapon
       prettyName: Missiles
       description: "Can be used to open red gates and deal more damage to enemies. They have limited ammo that is dropped by enemies and the ammo limit can be expanded."
       url: http://metroid.wikia.com/wiki/Missile
+    - ability: ammo-expansion
+      prettyName: Missile Tank
+      description: Allows to carry additional missiles, the player can collect a total of 21 missile tanks in the game. Additionally defeating each of the bosses (Kraid and Ridley) increases the limit by 75, for a total of 255 missiles.
+      url: http://metroid.wikia.com/wiki/Missile_Tank
     - ability: weapon-range
       prettyName: Long Beam
       description: "Increases the range of the beam. *In this game the protagonist can only have a single beam active!*"
@@ -63,6 +67,45 @@ metroid-1:
       description: "The player must defeat both Kraid and Ridley for their statues to rise in a specific room and a bridge to form which gives access to the final area of the game."
       url: http://metroid.wikia.com/wiki/Stone_Statues
 
+metroid-zero:
+  name: Metroid Zero Mission
+  series: metroid
+  date: 2004
+  wikiUrl: "https://en.wikipedia.org/wiki/Metroid:_Zero_Mission"
+  isCompleted: false
+  abilities:
+    - ability: health
+      prettyName: Energy
+      description: "Starts at 99HP, damage is dealt by touching enemies and their projectiles and can be restored by drops left from killing the enemies. Losing all *Energy* results in death."
+      url: http://metroid.wikia.com/wiki/Energy
+    - ability: jump
+      description: A regular jump, available from the beginning of the game. Has two versions - regular jump and spin jump. The latter is executed when the protagonist jumps while running and allows for greater speed in the air. Firing the weapon while performing a spin jump ends it.
+      url: http://metroid.wikia.com/wiki/Spin_Jump
+    - ability: weapon
+      prettyName: Beam
+      description: "Can be used to destroy enemies and blocks which unlock new passages."
+      url: http://metroid.wikia.com/wiki/Beam
+    - ability: morph-ball
+      description: "Makes the protagonist morph into a ball, effectively halving Samus's height, disabling [[abi:jump]] and [[abi:weapon]]. Allows passing through narrow passages."
+      url: http://metroid.wikia.com/wiki/Morph_Ball
+    - ability: weapon-range
+      prettyName: Long Beam
+      description: "Increases the range of the beam, useful for opening up pathways for [[abi:morph-ball]]."
+      url: http://metroid.wikia.com/wiki/Long_Beam
+    - ability: charge-weapon
+      prettyName: Charge beam
+      description: Allows charging the beam to shoot stronger bullets. Some enemies can only be damaged by charged beam.
+      url: http://metroid.wikia.com/wiki/Charge_Beam
+    - ability: health-expansion
+      prettyName: Energy Tank
+      description: "Increases the maximum HP by 100, a total of 12 can be collected in various hidden places. On hard mode each tank increases the maximum HP by 50."
+      url: http://metroid.wikia.com/wiki/Energy_Tank
+    - ability: ammo-expansion
+      prettyName: Missile Tank
+      description: "Increases the missile limit."
+      url: http://metroid.wikia.com/wiki/Missile_Tank
+    
+    
 
 #metroid-2:
 #  name: "Metroid 2: Return of Samus"
@@ -87,12 +130,6 @@ metroid-1:
 #  wikiUrl: <TODO>
 #  abilities:
 #
-#metroid-zero:
-#  name: Metroid Zero Mission
-#  series: metroid
-#  date: <TODO>
-#  wikiUrl: <TODO>
-#  abilities:
 #
 #metroid-prime-1:
 #  name: Metroid Prime
