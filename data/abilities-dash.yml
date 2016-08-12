@@ -1,0 +1,21 @@
+running:
+  name: Running
+  description: |
+    The protagonist can move horizontally significantly faster.
+  variants:
+    - Requires a running start to achieve the final speed.
+    - Makes the player invulnerable and hazardous to enemies when running at full speed.
+    - Reset or continue running while jumping or after landing.
+    - Allows destroying special block types.
+
+infinite-dash:
+  name: Infinite Dash
+  description: |
+    A dash which continues until the player hits an obstacle.
+  variants:
+    - Requires a running start to use, see [[abi:running]].
+    - Consumes HP when used.
+    - Can be used in all 8 cardinal directions.
+    - Kills/damages enemies on touch.
+    - Makes player invulnerable.
+    - Allows destroying special block types.

@@ -27,3 +27,11 @@ damage-reduction:
     - Might reduce all damage by a percent or a flat number.
     - Might completely mitigate damage from certain sources.
     - Might provide protection only in certain cases.
+
+ammo-expansion:
+  name: Ammo Expansion
+  description: |
+    Increases the amount of ammunition for any given weapon.
+  variants:
+    - Increases ammo for a single weapon type.
+    - Increases ammo for all weapon types.

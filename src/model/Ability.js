@@ -1,5 +1,6 @@
 var _ = require('lodash');
 var collection = [];
+var ASSERT = require('../assert');
 
 /**
  * @typedef {Object} AbilityRow
@@ -35,6 +36,9 @@ var Ability = function constructor(id, name, description, variants, category){
 
     /** @member {Array.<GameToAbility>} */
     this.gameLinks = [];
+
+    ASSERT(this.name, "Name is missing");
+    ASSERT(this.description, "Description is missing");
 };
 
 

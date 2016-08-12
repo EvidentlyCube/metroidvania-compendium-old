@@ -1,0 +1,7 @@
+enemy-counter:
+  name: Enemy Counter
+  description: |
+    Tells the player the number of enemies present in the current level or world.
+  variants:
+    - Limited only to a given type of enemies.
+    - Limited only to

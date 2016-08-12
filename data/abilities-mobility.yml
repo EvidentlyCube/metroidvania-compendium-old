@@ -1,0 +1,9 @@
+ledge-hanging:
+  name: Ledge Hanging
+  description: |
+    Allows the protagonist to grab ledges.
+  variants:
+    - Allow or disallow climbing up the ledge.
+    - Allow or disallow jumping off the ledge.
+    - Allow or disallow shooting while holding the ledge.
+    - Allow climbing the ledge even if it leads into a space shorter than the player - this might require crouching or a polymorphy power-up like [[abi:morph-ball]]

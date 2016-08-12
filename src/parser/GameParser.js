@@ -52,12 +52,12 @@ function parseAbilityRowWrapper(game){
      * @param key
      */
     function parseAbilityRow(abilityRow, key){
+        console.green(3, util.format("Parsing ability %s", abilityRow.ability));
         var ability = Ability.getById(abilityRow.ability);
         ASSERT(ability, "Game %s has ability %s which does not exist.", game.name, abilityRow.ability);
         var gameToAbility = new GameToAbility(game, ability, abilityRow.prettyName, abilityRow.url, abilityRow.description);
         game.abilityLinks.push(gameToAbility);
         ability.gameLinks.push(gameToAbility);
-        console.green(3, util.format("Parsed ability %s", abilityRow.ability));
     }
 
     return parseAbilityRow;

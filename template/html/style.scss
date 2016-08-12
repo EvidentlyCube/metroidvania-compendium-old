@@ -58,6 +58,11 @@ ul.game-to-ability-list{
   margin: 10px;
   border-radius: 10px;
 }
+.ability h5{
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 3px;
+}
+
 .ability h5, .ability h5 a{
   font-size: 24px;
   color: #666;
@@ -66,8 +71,10 @@ ul.game-to-ability-list{
 
 button.show-variants,
 button.show-examples{    
-	border: none;
-    color: #fff;
+	border-width: 0 1px;
+    border-style: solid;
+    border-color: #666;
+    color: black;
     font-family: Monsterrat,calibri,Verdana,sans-serif;
     text-transform: uppercase;
     margin-left: 20px;
@@ -80,25 +87,17 @@ button.show-examples{
 	width: 150px;
 	
 	&.show-variants{
-		background: brown;
-		border-color: brown;
+      background: #FFDDDD;
 	}
 	
 	&.show-variants.toggled{
-		background: white;
-		color: black;
-		border-width: 1px;
-		border-style: solid;
+      background: #FFAAAA;
 	}
 	&.show-examples{
-		background: darkmagenta;
-		border-color: darkmagenta;
+      background: #DDFFDD;
 	}
 	&.show-examples.toggled{
-		background: white;
-		color: black;
-		border-width: 1px;
-		border-style: solid;
+      background: #AAFFAA;
 	}
 }
 

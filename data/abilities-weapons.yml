@@ -13,8 +13,8 @@ touch-weapon:
     - May be activated, time limited and with limited uses.
     - Limited uses may recharge automatically, need collecting bonuses or reaching a checkpoint.
     - May work only when jumping.
-    - May work only when protagonist's weapon is charged, and on hit the charge may be lost (see: [[abi:charge-weapon]]).
-   
+    - "May work only when protagonist's weapon is charged, and on hit the charge may be lost (see: [[abi:charge-weapon]])."
+
 charge-weapon:
   name: Charge Weapon
   description: |
@@ -27,3 +27,21 @@ charge-weapon:
     - Some enemies may only be damaged by charged shot.
     - Charge duration may be reduced by additional power-ups.
     - May change weapon's properties when charged - added explosion, passing through walls, destroying specific blocks.
+
+damage-upgrade:
+  name: Damage Upgrade
+  description: |
+    Increases the damage dealt by a weapon.
+  variants:
+   - Increase only primary weapon's damage.
+   - Increase damage of every weapon.
+   - Increase damage only in specific cases (eg. underwater, when shooting mid-air, in hot places).
+   - Allow damaging/defeating certain types of enemies.
+   - Projectile goes through enemies, damaging each of them.
+
+paralyzer:
+  name: Paralyzer
+  description: |
+    A weapon which paralyzes enemies rendering them immobile for a duration of time.
+  variants:
+    - Prevents enemies from spotting the protagonist and triggering an alarm.

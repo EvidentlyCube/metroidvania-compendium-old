@@ -31,8 +31,13 @@ var GameToAbility = function constructor(game, ability, prettyName, url, descrip
 		} else {
 			return this.ability.name;
 		}
-	}
-	
+	};
+
+    this.getPrettyName = function(){
+        return this.prettyName || this.ability.name;
+    };
+
+    ASSERT(this.description, "No description");
     ASSERT(this.game, "Null game passed");
     ASSERT(this.ability, "Null ability passed");
 };

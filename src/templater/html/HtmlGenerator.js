@@ -157,7 +157,7 @@ function renderGameWithAbilityWrapper(){
     function renderGameToAbility(gameToAbility, index){
         console.log(4, util.format('Rendering game with ability #%s', index + 1));
         appendBody("<li class='game-to-ability'>");
-        appendBody('<a class="game-name" href="#game-%s">%s</a> ', gameToAbility.game.id, gameToAbility.game.name);
+        appendBody('<a class="game-name" href="#game-%s">%s (%s)</a> ', gameToAbility.game.id, gameToAbility.game.name, gameToAbility.getPrettyName());
         appendBody(parseInline(gameToAbility.description));
         appendBody("</li>");
     }

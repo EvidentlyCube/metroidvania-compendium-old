@@ -12,3 +12,10 @@ transparent-weapon:
   variants:
    - May only go through certain types of blocks.
    - May not go through enemies.
+
+fluid-ignore:
+  name: Fluid Ignore
+  description: |
+    Removes any and all or some of the mobility restrictions placed upon the player from being underwater or inside another type of fluid - the usual limitations being slower movement or a weaker jump. Specifically does not allow breathing underwater.
+  variants:
+    - Allows moving at full-speed and jumping at full height.

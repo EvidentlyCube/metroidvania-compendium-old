@@ -27,9 +27,9 @@ infinite-jump:
   description: |
     Variation of [[abi:secondary-jumps]], gives the protagonist the ability to jump in mid-air indefinitely.
   variants:
-   - May be paused/stopped when protagonist is damaged, making it possible to restart only after landing.
-   - May only allow moving vertically up, being stopped after moving horizontally and then requiring landing to restart.
-   - May only allow moving in a single diagonal direction to limit its usability.
+   - Pause/stopp when protagonist is damaged, making it possible to restart the sequence only after landing.
+   - Only allow moving vertically up, being stopped after moving horizontally and then requiring landing to restart.
+   - Only allow moving in a single diagonal direction to limit its usability.
   
 wall-jump:
   name: Wall Jump
