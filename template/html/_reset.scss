@@ -38,6 +38,8 @@ nav ul {
 blockquote, q {
   quotes:none;
 }
+
+//noinspection ALL
 blockquote:before, blockquote:after,
 q:before, q:after {
   content:'';

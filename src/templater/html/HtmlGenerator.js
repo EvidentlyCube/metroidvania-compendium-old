@@ -6,6 +6,7 @@ var fs = require('fs');
 var console = require('../../console');
 var globalTokenReplacer = require('./../GlobalTokenReplacer');
 var linkTokenReplacer = require('../LinkTokenReplacer');
+var htmlTemplater = require('./HtmlTemplater');
 
 var Category = require('../../model/Category');
 var Series = require('../../model/Series');
@@ -80,9 +81,7 @@ function renderCredits(){
 }
 
 function renderChangelog(){
-    appendSectionStart('changelog', 'Changelog');
-    _.forEach(Changelog.getCollection(), renderChangelogRow);
-    appendSectionClosure();
+    appendBody(htmlTemplater.replaceFile('template/html/template_changelog.ejs', {logs: Changelog.getCollection()}));
 }
 
 /**
@@ -95,7 +94,7 @@ function renderCategoryWrapper(depth) {
     function renderCategory(category) {
         console.log(2, util.format('Rendering category %s', category.name));
         appendBody("<div id='category-div-%s' class='category category-depth-%s'>", category.id, depth);
-        appendBody("<h%s id='category-%s'><a href='#category-%s'>%s</a></h%s>", depth, category.id, category.id, category.name, depth);
+        appendBody("<h%s><span id='category-%s' class='anchor'></span><a href='#category-%s'>%s</a></h%s>", depth, category.id, category.id, category.name, depth);
         appendBody("<p class='description'>%s</p>", category.description);
         if (category.children.length > 0) {
             _.forEach(category.children, renderCategoryWrapper(depth + 1));
@@ -131,8 +130,12 @@ function renderAbilityWrapper(depth) {
 		appendBody('<div class="variants-container">');
 		_.forEach(ability.variants, renderAbilityVariant);
         appendBody('</div>');
-		appendBody('<ul class="game-to-ability-list examples">');
+        appendBody('<div class="game-to-ability-list examples">');
+        appendBody('<table>');
         _.forEach(ability.gameLinks, renderGameWithAbilityWrapper(depth));
+        appendBody('</table>');
+        appendBody('</div>');
+        appendBody('<ul class="game-to-ability-list examples">');
         appendBody('</ul>');
         appendBody('</div>');
 		appendBody('</div>');
@@ -156,10 +159,12 @@ function renderGameWithAbilityWrapper(){
      */
     function renderGameToAbility(gameToAbility, index){
         console.log(4, util.format('Rendering game with ability #%s', index + 1));
-        appendBody("<li class='game-to-ability'>");
-        appendBody('<a class="game-name" href="#game-%s">%s (%s)</a> ', gameToAbility.game.id, gameToAbility.game.name, gameToAbility.getPrettyName());
-        appendBody(parseInline(gameToAbility.description));
-        appendBody("</li>");
+        console.log(4, util.format('Rendering ability in game #%s', index + 1));
+        appendBody("<tr class='game-to-ability'>");
+        appendBody('<th class="name"><a href="#game-%s">%s</a></th>', gameToAbility.game.id, gameToAbility.game.name);
+        appendBody('<td class="ability">%s</td>', gameToAbility.name);
+        appendBody('<td class="description">%s</td>', parseGuess(gameToAbility.description));
+        appendBody("</tr>");
     }
 
     return renderGameToAbility;
@@ -171,7 +176,7 @@ function renderGameWithAbilityWrapper(){
 function renderSeries(series){
 	console.log(2, util.format('Rendering series %s (%s)', series.name, series.id));
     appendBody('<div class="series">');
-    appendBody('<h2 id="series-%s"><a href="#series-%s">%s</a></h2>', series.id, series.id, series.name);
+    appendBody('<h2><span id="series-%s" class="anchor"></span><a href="#series-%s">%s</a></h2>', series.id, series.id, series.name);
     appendBody('<div class="series-body">');
     _.forEach(series.games, renderGame);
     appendBody('</div>');
@@ -182,48 +187,16 @@ function renderSeries(series){
  * @param {Game} game
  */
 function renderGame(game){
-	console.log(3, util.format('Rendering game %s (%s)', game.name, game.id));
-    appendBody('<div class="game">');
-    appendBody('<h3 id="game-%s"><a href="#game-%s">%s (%s)</a> <a href="%s">[wiki]</a>', game.id, game.id, game.name, game.date, game.wikiUrl);
-	if (game.abilityLinks.length > 0){
-		appendBody('<button class="show-examples" data-alt-text="Hide abilities">Show abilities</button>')
-	}
-	appendBody('</h3>');
-    appendBody('<ul class="game-to-ability-list examples">');
-    _.forEach(game.abilityLinks, renderAbilityInGame);
-    appendBody('</ul>');
-    appendBody('</div>');
+    console.log(3, util.format('Rendering game %s (%s)', game.name, game.id));
+    appendBody(htmlTemplater.replaceFile('template/html/template_game.ejs', game));
 }
 
-/**
- * @param {GameToAbility} gameToAbility
- * @param {number} index
- */
-function renderAbilityInGame(gameToAbility, index){
-	console.log(4, util.format('Rendering ability in game #%s', index + 1));
-    appendBody("<li class='game-to-ability'>");
-    appendBody('<a class="ability-name" href="#ability-%s">%s</a> ', gameToAbility.ability.id, gameToAbility.getFullName());
-    appendBody(parseInline(gameToAbility.description));
-    appendBody("</li>");
-}
 /**
  * @param {Credits} credits
  */
 function renderCreditsRow(credits, index){
     console.log(2, util.format('Rendering credits #%s', index));
     appendBody('<li><strong>%s</strong> - %s</li>', credits.name, credits.contribution)
-}
-/**
- * @param {Changelog} changelog
- */
-function renderChangelogRow(changelog, index){
-    console.log(2, util.format('Rendering changelog #%s', index));
-    appendBody('<div class="changelog">');
-    appendBody('<h4><strong>Version %s:</strong> %s</h4>', globalTokenReplacer(changelog.version), globalTokenReplacer(changelog.date));
-    appendBody('<div class="changelog-body">');
-    appendBody(parseBlock(globalTokenReplacer(changelog.changes)));
-    appendBody('</div>');
-    appendBody('</div>');
 }
 
 function parseBlock(string){
@@ -232,6 +205,10 @@ function parseBlock(string){
 function parseInline(string){
     return MarkdownParser.parseInline(linkTokenReplacer.replace(string));
 }
+function parseGuess(string){
+    return MarkdownParser.parseGuess(linkTokenReplacer.replace(string));
+}
+
 function appendSectionStart(sectionId, title){
     console.log(1, util.format('Rendering %s', title));
     appendBody('<div class="%s-container section-container">', sectionId);

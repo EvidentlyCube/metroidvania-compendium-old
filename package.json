@@ -1,6 +1,6 @@
 {
     "name": "MetroidvaniaCompendium",
-    "version": "0.2.5",
+    "version": "0.2.84",
     "private": true,
     "scripts": {
         "start": "node ./bin/www"
@@ -8,6 +8,8 @@
     "dependencies": {
         "colors": "^1.1.2",
         "dateformat": "^1.0.12",
+        "ejs": "^2.5.1",
+        "glob": "^7.0.5",
         "grunt": "^1.0.1",
         "grunt-bump": "^0.8.0",
         "grunt-contrib-copy": "^1.0.0",
@@ -21,5 +23,5 @@
         "string": "^3.3.1",
         "yamljs": "^0.2.8"
     },
-    "versionDate": "12 Aug 2016, 20:38:50"
+    "versionDate": "16 Aug 2016, 22:49:01"
 }

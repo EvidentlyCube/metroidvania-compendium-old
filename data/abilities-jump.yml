@@ -36,8 +36,16 @@ wall-jump:
   description: |
     Allows jumping off the wall in mid-air.
   variants:
-    - May disallow climbing a single column by pushing the protagonist far away from the wall on jump that they get back to the wall a little lower than where they jumped from.
-    - May only allow jumping off specific types of walls/disallow jumping off specific types of walls.
-    - May allow climbing a vertical column indefinitely.
-    - May be limited to a single wall-jump between landings.
-    - May completely disallow returning back to the wall that was jumped off by forcing inertial movement until landing (makes it really hard to aim).
+    - Disallow climbing a single column by pushing the protagonist far away from the wall on jump that they get back to the wall a little lower than where they jumped from.
+    - Only allow jumping off specific types of walls/disallow jumping off specific types of walls.
+    - Allow climbing a vertical column indefinitely.
+    - Limit to a single wall-jump between landings.
+    - Completely disallow returning back to the wall that was jumped off by forcing inertial movement until landing (makes it really hard to aim the landing).
+
+special-jump:
+  name: Special Jump
+  description: |
+    A generic container for all the other types of jumps which can occur under very special circumstances which do not warrant a separate entry for each jump.
+  variants:
+    - Jump when in a polymorphed form, eg. [[abi:morph-ball]].
+    - Jump when crawling.

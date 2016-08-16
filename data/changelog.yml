@@ -1,5 +1,13 @@
-- date: 11 Aug 2016
+- date: 15 Aug 2016
   version: ~~~~VERSION~~~~
+  changes: |
+    - Finished [[game:metroid-zero]], [[game:metroid-2]]
+    - Replace game/ability example lists with tables
+    - Now game ability can link to multiple abilities
+    - Now all anchors should scroll in such a way that they are visible
+    - Added descriptions and infobox to the games
+- date: 11 Aug 2016
+  version: 0.2.2 (ALPHA)
   changes: |
     - Finished [[game:metroid-1]]
     - Fixed anchor position for ability names
@@ -7,7 +15,7 @@
   version: 0.1.100
   changes: |
     - Mostly finalized the content of Preface
-    - Added "prettyName" to games' abilities to showcase the actual in-game name used for an ability
+    - Added "name" to games' abilities to showcase the actual in-game name used for an ability
     - Added variants to abilities which list how they [can be played](http://tvtropes.org/pmwiki/pmwiki.php/Main/PlayingWithATrope "Warning: TV Tropes Link!")
     - Added buttons to show variants and examples of abilities/games
     - Added credits

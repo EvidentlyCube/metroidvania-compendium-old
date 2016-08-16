@@ -1,0 +1,28 @@
+fds:
+  name: Family Computer Disk System
+  shortName: FDS
+  url: https://en.wikipedia.org/wiki/Family_Computer_Disk_System
+nes:
+  name: Nintendo Entertainment System
+  shortName: NES
+  url: https://en.wikipedia.org/wiki/Nintendo_Entertainment_System
+gb:
+  name: Game Boy
+  shortName: GB
+  url: https://en.wikipedia.org/wiki/Game_Boy
+gba:
+  name: Game Boy Advanced
+  shortName: GBA
+  url: https://en.wikipedia.org/wiki/Game_Boy_Advance
+vc-wii:
+  name: Virtual Console for Wii
+  shortName: VC-WII
+  url: https://en.wikipedia.org/wiki/Virtual_Console#Wii
+vc-3ds:
+  name: Virtual Console for 3DS
+  shortName: VC-3DS
+  url: https://en.wikipedia.org/wiki/Virtual_Console#Nintendo_3DS
+vc-wiiu:
+  name: Virtual Console for Wii U
+  shortName: VC-WIIU
+  url: https://en.wikipedia.org/wiki/Virtual_Console#Wii_U

@@ -4,4 +4,4 @@ enemy-counter:
     Tells the player the number of enemies present in the current level or world.
   variants:
     - Limited only to a given type of enemies.
-    - Limited only to
+    - Limited only to current screen/level/world/planet.

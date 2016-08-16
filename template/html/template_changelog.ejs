@@ -1,0 +1,11 @@
+<div class="changelog-container section-container">
+    <h1>
+        <span id="changelog" class="anchor"></span>
+        <a href="#changelog">
+            Changelog
+        </a>
+    </h1>
+    <% logs.forEach(function(log){ %>
+        <%- include('template_changelog_row', log) %>
+    <% }); %>
+</div>

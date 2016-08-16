@@ -1,0 +1,131 @@
+metroid-2:
+  name: "Metroid 2: Return of Samus"
+  series: metroid
+  date: 1991
+  description: |
+    #### Description:
+    A side-scroller platformer shooter.
+
+    #### Analysis:
+    For many Metroid II is the black horse of the family, despite in almost every aspect being superior to its predecessor. Many parallels could be drawn to even more infamous [Zelda II: The Adventure of Link](https://en.wikipedia.org/wiki/Zelda_II:_The_Adventure_of_Link), though it wasn't as drastic of a change. However Metroid II is a very interesting piece to study when placed in the context of the other 2D metroid titles.
+
+    The game features almost complete departure from traditional "bosses" found in majority of games. Instead the player fights the same minibosses multiple times in different environments which is a two-edged sword, more intensely boring the player but at the same time allows them to experience how the context shapes the seemingly identical encounters. It could've been additionally improved by allowing a combat with multiple metroids of the same of different types at the same time but most likely due to the technical limitations this wasn't done - such a move would've certainly increased the fun of the game.
+
+    There is also the problem known from the first game, an abundance of identical passages and chambers. This only gets worse by the fact that the locations do not exactly belong in a flat or sensible space - plotting the map onto paper results in rooms overlapping each other or being longer/shorter/bigger/smaller depending on which route you take. Both of those things are huge issues.
+  platforms:
+    - gb
+    - vc-3ds
+  buy:
+    vc-3ds: http://www.nintendo.com/games/detail/ZJIPw1j3cMBl2wJie6zl65OMeIjZd6aA
+  links:
+    Wikipedia: https://en.wikipedia.org/wiki/Metroid_II:_Return_of_Samus
+    TV Tropes: http://tvtropes.org/pmwiki/pmwiki.php/VideoGame/MetroidIIReturnOfSamus
+    Giant Bomb: http://www.giantbomb.com/metroid-ii-return-of-samus/3030-5708/
+    YouTube Longplay: https://www.youtube.com/watch?v=AF1C0xZxBOw
+  isCompleted: true
+  abilities:
+    - name: Energy
+      ability: health
+      description: |
+        Starts at 99HP, damage is dealt by touching enemies and their projectiles and can be restored by drops left from killing the enemies. Losing all *Energy* results in death.
+      url: http://metroid.wikia.com/wiki/Energy
+
+    - name: Jump
+      ability: jump
+      description: A regular jump, available from the beginning of the game. Has two versions - regular jump and spin jump. The latter is executed when Samus jumps while running and allows for greater speed in the air. Firing the weapon while performing a spin jump ends it.
+      url: http://metroid.wikia.com/wiki/Spin_Jump
+
+    - name: Beam
+      ability: weapon
+      description: "Can be used to destroy enemies and blocks which unlock new passages."
+      url: http://metroid.wikia.com/wiki/Beam
+
+    - name: Metroid Detector
+      ability: enemy-counter
+      description: Displays the number of Metroids that are left to be defeated to finish the game.
+      url: http://metroid.wikia.com/wiki/Metroid_Detector
+
+    - name: Morph Ball
+      ability: morph-ball
+      description: |
+        Makes Samus morph into a ball, effectively halving Samus's height, disabling [[abi:jump]] and [[abi:weapon]]. Allows passing through narrow passages.
+      url: http://metroid.wikia.com/wiki/Morph_Ball
+
+    - name: Missiles
+      ability: strong-weapon
+      description: Are required to defeat metroids.
+      url: http://metroid.wikia.com/wiki/Missile
+
+    - name: Missile Pod
+      ability: ammo-expansion
+      description: Increases the missile limit by 10, expanding the initial 30 missiles up to 250 - there are 22 missiles pods to be found.
+      url: http://metroid.wikia.com/wiki/Missile_Tank
+
+    - name: Energy Tank
+      ability: health-expansion
+      description: Increases the maximum HP by 100, a total of 5 can be collected in various hidden places.
+      url: http://metroid.wikia.com/wiki/Energy_Tank
+
+    - name: Bombs
+      ability: bombs
+      description: |
+        Can be placed in [[abi:morph-ball]] form and used to destroy specific types of blocks and to propel Samus up with the explosion. Bomb explosion pulls Spider Ball away from the wall.
+      url: http://metroid.wikia.com/wiki/Bomb
+
+    - name: Spider Ball
+      ability: spider-mode
+      description: |
+        When in [[abi:morph-ball]] Samus can enter the Spider Ball mode which clings her to the wall and allows traversing walls and ceilings alike. Being damaged in any way or subject to [[abi:bombs]] explosion reverts back to the Morph Ball, though if the player is quick enough they can reattach Samus to a nearby wall.
+      url: http://metroid.wikia.com/wiki/Spider_Ball
+
+    - name: High Jump Boots
+      ability: increased-jump-height
+      description: More than doubles Samus's jump height allowing her to reach new places.
+      url: http://metroid.wikia.com/wiki/High_Jump_Boots
+
+    - name: Spring Ball
+      ability: special-jump
+      description: Allows jumping when in the [[abi:morph-ball]] fprm.
+      url: http://metroid.wikia.com/wiki/Spring_Ball
+
+    - name: Space Jump
+      ability: infinite-jump
+      description: |
+        Allows jumping infinitely up but only when performing the spin jump.
+      url: http://metroid.wikia.com/wiki/Space_Jump
+
+    - name: Screw Attack
+      ability: touch-weapon
+      description: A touch attack which only works during spin jump, can destroy enemies and specific types of blocks.
+      url: http://metroid.wikia.com/wiki/Screw_Attack
+
+    - name: Varia Suit
+      abilities:
+        - damage-reduction
+        - running
+      description: |
+        - Reduces damage taken by 20%
+        - Slightly increases running speed
+      url: http://metroid.wikia.com/wiki/Varia_Suit
+
+    - name: Ice Beam
+      ability: enemy-freeze
+      description: Allows freezing enemies and using them as platforms. Is required to destroy Metroids in the final section of the game.
+      url: http://metroid.wikia.com/wiki/Ice_Beam
+
+    - name: Wave Beam
+      ability: transparent-weapon
+      description: "A beam that passess through walls and enemies."
+      url: http://metroid.wikia.com/wiki/Wave_Beam
+
+    - name: Spazer Beam
+      ability: split-shot
+      description: Fires three beams parallel to each other, each beam is treated as a separate entity.
+      url: http://metroid.wikia.com/wiki/Spazer_Beam
+
+    - name: Plasma Beam
+      abilities:
+        - penetrating-shot
+        - damage-upgrade
+      description: Makes beam go through enemies and increases dealt damage.
+      url: http://metroid.wikia.com/wiki/Plasma_Beam

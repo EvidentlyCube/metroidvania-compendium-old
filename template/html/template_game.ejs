@@ -1,0 +1,58 @@
+<div class="game">
+    <h3>
+        <span id="game-<%= id %>" class="anchor"></span>
+        <a href="#game-<%= id %>">
+            <%= name %> (<%= date %>)
+        </a>
+
+        <% if (abilityLinks.length > 0){ %>
+            <button class="show-description" data-alt-text="Hide description">Show description</button>
+        <% } %>
+
+        <% if (abilityLinks.length > 0){ %>
+            <button class="show-examples" data-alt-text="Hide abilities">Show abilities</button>
+        <% } %>
+    </h3>
+    <div class="game-description">
+        <div class="info-box">
+            <img src="logo-<%- id %>.png">
+            <ul>
+                <li>
+                    <% forEach(links, function(link, name, isFirst){ %>
+                        <% if (!isFirst){ %>&#9830;<% } %>
+                        <a href="<%= link %>"><%= name %></a>
+                    <% }); %>
+                </li>
+                <li>
+                    <strong>Released for:</strong>
+                    <% forEach(platforms, function(platform, key, isFirst){ %>
+                        <% if (!isFirst){ %>&#9830;<% } %>
+                        <a href="<%= platform.url %>"><%= platform.name %></a>
+                    <% }); %>
+                </li>
+                <li><strong>Buy on:</strong>
+                    <% forEach(purchases, function(purchase, key, isFirst){ %>
+                        <% if (!isFirst){ %>&#9830;<% } %>
+                        <a href="<%= purchase.url %>"><%= purchase.platform.name %></a>
+                    <% }); %>
+                </li>
+            </ul>
+        </div>
+        <%- parseBlock(description) %>
+    </div>
+    <div class="game-to-ability-list examples">
+        <table>
+            <% abilityLinks.forEach(function(gameToAbility){ %>
+                <tr class="game-to-ability">
+                    <th class="name"><%= gameToAbility.name %></th>
+                    <td class="ability">
+                        <% gameToAbility.abilities.forEach(function(ability){ %>
+                            <a class="ability-name" href="#ability-<%= ability.id %>"><%= ability.name %></a>
+                        <% }); %>
+                    </td>
+                    <td class="description"><%- parseGuess(gameToAbility.description) %></td>
+                </tr>
+            <% }); %>
+        </table>
+    </div>
+</div>

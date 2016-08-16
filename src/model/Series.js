@@ -2,6 +2,13 @@ var _ = require('lodash');
 var collection = [];
 
 /**
+ * @typedef {Object} SeriesRow
+ * @property {string} name
+ * @property {string} desc
+ * @property {string} wikiUrl
+ */
+
+/**
  * @class Series
  * @param {string} id
  * @param {string} name
@@ -9,7 +16,7 @@ var collection = [];
  * @param {string} wikiUrl
  * @constructor
  */
-var Series = function constructor(id, name, description, wikiUrl){
+var Series = function(id, name, description, wikiUrl){
     /** @member {string} */
     this.id = id;
 

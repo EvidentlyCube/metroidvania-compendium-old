@@ -3,6 +3,8 @@
 @import '_common';
 @import '_navigation';
 @import '_title';
+@import '_game';
+@import '_ability-list';
 @import '_preface';
 @import '_changelog';
 
@@ -14,32 +16,6 @@ p.description{
   font-size: 12px;
   font-style: italic;
   padding: 0;
-}
-
-ul.game-to-ability-list{
-  display: none;
-  margin-top: 10px;
-  padding-left: 30px;
-
-  a.game-name,
-  a.ability-name{
-    font-variant: small-caps;
-    font-size: 14px;
-    background: #EEE;
-    padding: 2px 10px;
-    text-decoration: none;
-    font-style: normal;
-
-    &:hover{
-      background: #DEDEDE;
-    }
-  }
-
-  li{
-    font-size: 13px;
-    list-style: none;
-    line-height: 24px;
-  }
 }
 
 .category{
@@ -70,7 +46,8 @@ ul.game-to-ability-list{
 }
 
 button.show-variants,
-button.show-examples{    
+button.show-examples,
+button.show-description{
 	border-width: 0 1px;
     border-style: solid;
     border-color: #666;
@@ -98,6 +75,12 @@ button.show-examples{
 	}
 	&.show-examples.toggled{
       background: #AAFFAA;
+	}
+	&.show-description{
+      background: #DDDDFF;
+	}
+	&.show-description.toggled{
+      background: #AAAAFF;
 	}
 }
 

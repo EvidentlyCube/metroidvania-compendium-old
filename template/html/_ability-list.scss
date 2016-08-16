@@ -1,0 +1,62 @@
+@import '_vars';
+
+.game-to-ability-list{
+  display: none;
+  padding-top: 10px;
+  padding-left: 30px;
+
+  tr.game-to-ability:nth-child(2n){
+    background: #F6F6FF;
+  }
+
+  tr.game-to-ability td{
+    padding: 4px 5px;
+    font-size: 13px;
+  }
+
+  th.name{
+    white-space: nowrap;
+    vertical-align: middle;
+    color: black;
+    font-weight: bold;
+    padding: 4px 5px;
+
+    a{
+      font-style: normal;
+      text-decoration: none;
+    }
+  }
+
+  td.ability{
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  td.description{
+    vertical-align: middle;
+  }
+
+  a.game-name,
+  a.ability-name{
+    display: block;
+    font-variant: small-caps;
+    font-size: 14px;
+    background: #EEE;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-style: normal;
+    margin: 3px 0;
+
+    &:hover{
+      background: #DEDEDE;
+    }
+  }
+  ul,
+  ol{
+    padding-left: 30px;
+    li{
+      list-style: circle;
+    }
+  }
+}

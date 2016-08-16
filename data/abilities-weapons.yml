@@ -28,6 +28,28 @@ charge-weapon:
     - Charge duration may be reduced by additional power-ups.
     - May change weapon's properties when charged - added explosion, passing through walls, destroying specific blocks.
 
+split-shot:
+  name: Split Shot
+  description: |
+    Splits the weapon's bullets into multiple shots.
+  variants:
+    - Each shots behaves as a separate entity, making it possible to hit multiple enemies with a single fire.
+    - All shots are treates as a single entity so that all this does is increase the area covered by bullets.
+    - Damage per shot is divided by the number of shots.
+    - "Standard names: double shot, triple shot, quadruple shot, quad shot, quintiple shot"
+    - Bullets are fired parallel or angled.
+
+penetrating-shot:
+  name: Penetrating Shot
+  description: |
+    Allows the weapon's bullets to go through enemies and hit multiple targets.
+  variants:
+    - Can go through infinite number of targets, hitting each one once.
+    - Deals damage every few frames of contact, thus dealing more damage to bigger foes.
+    - Has a limited number of enemies it can hit before dying off.
+    - Deals less and less damage with each hit.
+    - Deals more and more damage with each hit.
+
 damage-upgrade:
   name: Damage Upgrade
   description: |

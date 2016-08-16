@@ -1,0 +1,121 @@
+metroid-1:
+  name: Metroid
+  series: metroid
+  date: 1986
+  description: |
+    #### Description:
+    A side-scroller platformer shooter.
+
+    #### Analysis:
+    Being the first or one of the first games that we can categorize as metroidvanias Metroid is responsible for a lot of things we take for granted today - open exploration of the world, collecting power-ups to enable new routes, backtracking or hunting for hidden power-ups. The strong core of the game has been subsequently reused and improved upon both in further installments and in other games which renders the original devoid of any especially intriguing characteristics, but not fully.
+
+     All the technological limitations of the era and the platform create something to explore, though from the point of view of contemporary game design it's of little interest as most of the decisions made around those limitations is not very interesting to explore nowadays.
+
+     But there is one very interesting concept in this game that could make a comeback in a modern game, even if in Metroid it served very little purpose - limiting the beam to a single power-up. A careful routing could create an interesting puzzle for the player to solve, though it's **very** important to avoid excessive amounts of backtracking in such a case. Skipping item aquisition fanfare would also be a wise choice.
+
+  platforms:
+    - fds
+    - nes
+    - gba
+    - vc-wii
+    - vc-3ds
+    - vc-wiiu
+  buy:
+    vc-wii: http://www.nintendo.com/games/detail/TNy2CbBIPVqWN6CU0TIUTVka2X5I3wku
+    vc-3ds: http://www.nintendo.com/games/detail/gS0eLnwQcwwXa7THX396jPmveOcaVCr2
+    vc-wiiu: http://www.nintendo.com/games/detail/hOyRxr3W4yhKWayjsq6c38w_B41MeO_j
+  links:
+    Wikipedia: https://en.wikipedia.org/wiki/Metroid_(video_game)
+    TV Tropes: http://tvtropes.org/pmwiki/pmwiki.php/VideoGame/Metroid1
+    Giant Bomb: http://www.giantbomb.com/metroid/3030-21761/
+    YouTube Longplay: https://www.youtube.com/watch?v=JuNygTLHlm0
+  isCompleted: true
+  abilities:
+    - name: Energy
+      ability: health
+      description: |
+        Starts at 99HP, damage is dealt by touching enemies and their projectiles and can be restored by drops left from killing the enemies. Losing all *Energy* results in death.
+      url: http://metroid.wikia.com/wiki/Energy
+
+    - name: Jump
+      ability: jump
+      description: |
+        A regular jump, available from the beginning of the game. Has two versions - regular jump and spin jump. The latter is executed when Samus jumps while running and allows for greater speed in the air. Firing the weapon while performing a spin jump ends it.
+      url: http://metroid.wikia.com/wiki/Spin_Jump
+
+    - name: Beam
+      ability: weapon
+      description: |
+        Can be used to destroy enemies and blocks which unlock new passages.
+      url: http://metroid.wikia.com/wiki/Beam
+
+    - name: Morph Ball
+      ability: morph-ball
+      description: |
+        Makes Samus morph into a ball, effectively halving Samus's height, disabling [[abi:jump]] and [[abi:weapon]]. Allows passing through narrow passages.
+      url: http://metroid.wikia.com/wiki/Morph_Ball
+
+    - name: Missiles
+      ability: strong-weapon
+      description: |
+        Can be used to open red gates and deal more damage to enemies. They have limited ammo that is dropped by enemies and the ammo limit can be expanded.
+      url: http://metroid.wikia.com/wiki/Missile
+
+    - name: Missile Tank
+      ability: ammo-expansion
+      description: |
+        Allows to carry additional missiles, the player can collect a total of 21 missile tanks in the game. Additionally defeating each of the bosses (Kraid and Ridley) increases the limit by 75, for a total of 255 missiles.
+      url: http://metroid.wikia.com/wiki/Missile_Tank
+
+    - name: Long Beam
+      ability: weapon-range
+      description: |
+        Increases the range of the beam. *In this game Samus can only have a single beam active!*
+      url: http://metroid.wikia.com/wiki/Long_Beam
+
+    - name: Energy Tank
+      ability: health-expansion
+      description: |
+        Increases the maximum HP by 100, a total of 6 can be collected in various hidden places.
+      url: http://metroid.wikia.com/wiki/Energy_Tank
+
+    - name: Bombs
+      ability: bombs
+      description: |
+        Can be placed in [[abi:morph-ball]] form and used to destroy specific types of blocks and to jump.
+      url: http://metroid.wikia.com/wiki/Bomb
+
+    - name: Ice Beam
+      ability: enemy-freeze
+      description: |
+        Allows freezing enemies and using them as platforms. *In this game Samus can only have a single beam active!*
+      url: http://metroid.wikia.com/wiki/Ice_Beam
+
+    - name: High Jump Boots
+      ability: increased-jump-height
+      description: Increases Samus's jump height significantly.
+      url: http://metroid.wikia.com/wiki/High_Jump_Boots
+
+    - name: Varia Suit
+      ability: damage-reduction
+      description: Reduces damage taken by 50%.
+      url: http://metroid.wikia.com/wiki/Varia_Suit
+
+    - name: Screw Attack
+      abilities:
+        - secondary-destroyer
+        - touch-weapon
+      description: A touch attack which only works during spin jump, can destroy enemies and specific types of blocks.
+      url: http://metroid.wikia.com/wiki/Screw_Attack
+
+    - name: Wave Beam
+      ability: transparent-weapon
+      description: |
+        A beam that passess through walls and enemies. *In this game Samus can only have a single beam active!*
+      url: http://metroid.wikia.com/wiki/Wave_Beam
+
+    - name: Stone Statues
+      ability: key
+      description: |
+        The player must defeat both Kraid and Ridley for their statues to rise in a specific room and a bridge to form which gives access to the final area of the game.
+      url: http://metroid.wikia.com/wiki/Stone_Statues

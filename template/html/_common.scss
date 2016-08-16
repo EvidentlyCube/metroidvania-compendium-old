@@ -10,7 +10,8 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6,
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+th{
   font-family: 'Monsterrat', 'calibri', 'Verdana', sans-serif;
   color: $header-color;
   font-variant: small-caps;
@@ -59,7 +60,7 @@ h1 a {
   font-size: 52px;
 }
 
-p, span, li {
+p, span, li, td, th{
   font-family: 'Open Sans', 'Calibri', 'Verdana', sans-serif;
   line-height: 20px;
   text-align: justify;
@@ -69,6 +70,10 @@ p.description {
   font-size: 12px;
   font-style: italic;
   padding: 0;
+}
+
+.section-container{
+  clear: both;
 }
 
 .section-body {

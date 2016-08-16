@@ -1,5 +1,6 @@
 var _ = require('lodash');
 var warnings = require('../warnings');
+var ASSERT = require('../assert');
 
 var collection = [];
 
@@ -7,16 +8,20 @@ var collection = [];
  * @typedef {Object} GameRow
  * @property {string} name
  * @property {string} series
+ * @property {string} description
  * @property {number} date
- * @property {string} wikiUrl
  * @property {boolean} isCompleted
+ * @property {Array.<string>} platforms
+ * @property {Array.<string>} buy
+ * @property {Array.<string>} links
  * @property {Array.<GameAbilityRow>} abilities
  */
 
 /**
  * @typedef {Object} GameAbilityRow
+ * @property {Array.<string>} abilities
  * @property {string} ability
- * @property {string} prettyName
+ * @property {string} name
  * @property {string} description
  * @property {string} url
  */
@@ -25,18 +30,22 @@ var collection = [];
  * @class Game
  * @param {string} id
  * @param {string} name
+ * @param {string} description
  * @param {Series} series
  * @param {number} date
- * @param {string} isCompleted
- * @param {string} wikiUrl
+ * @param {boolean} isCompleted
+ * @param {Array.<string>} links
  * @constructor
  */
-var Game = function constructor(id, name, series, date, isCompleted, wikiUrl){
+var Game = function(id, name, description, series, date, isCompleted, links){
     /** @member {string} */
     this.id = id;
 
     /** @member {string} */
     this.name = name;
+
+    /** @member {string} */
+    this.description = description;
 
     /** @member {Series} */
     this.series = series;
@@ -47,11 +56,35 @@ var Game = function constructor(id, name, series, date, isCompleted, wikiUrl){
     /** @member {boolean} */
     this.isCompleted = isCompleted;
 
-    /** @member {string} */
-    this.wikiUrl = wikiUrl;
-
     /** @member {Array.<GameToAbility>} */
     this.abilityLinks = [];
+
+    /** @member {Array.<Platform>} */
+    this.platforms = [];
+
+    /** @member {Array.<GamePurchase>} */
+    this.purchases = [];
+
+    /** @member {Array.<String>} */
+    this.links = links;
+
+    /**
+     * @param {Platform} platform
+     */
+    this.addPlatform = function(platform){
+        ASSERT(platform, "Null platform given");
+        this.platforms.push(platform);
+    };
+
+    ASSERT(this.description, 'Empty description given');
+
+    /**
+     * @param {GamePurchase} purchase
+     */
+    this.addPurchase = function(purchase){
+        ASSERT(purchase, "Null purchase given");
+        this.purchases.push(purchase);
+    };
 
     if (!series){
         throw new Error("Series must be set!");
@@ -61,13 +94,7 @@ var Game = function constructor(id, name, series, date, isCompleted, wikiUrl){
         warnings.add('Game %s (%s) is missing date.', this.name, this.id);
         this.isCompleted = false;
     }
-
-    if (!this.wikiUrl) {
-        warnings.add('Game %s (%s) is missing wikiUrl.', this.name, this.id);
-        this.isCompleted = false;
-    }
 };
-
 
 /**
  * @function addToCollection

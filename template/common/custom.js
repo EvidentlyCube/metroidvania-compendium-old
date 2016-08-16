@@ -21,4 +21,14 @@ function init(){
 		$this.parent().parent().find('.examples').slideToggle();
 		return false;
 	});
+	$('button.show-description').click(function(){
+		var $this = $(this);
+		var newText = $this.attr('data-alt-text');
+		var oldText = $this.text();
+		$this.text(newText);
+		$this.attr('data-alt-text', oldText);
+		$this.toggleClass('toggled');
+		$this.parent().parent().find('.game-description').slideToggle();
+		return false;
+	});
 }

@@ -56,6 +56,10 @@ function loadTokens() {
 function replaceGlobalTokens(string, tokens) {
     var replaceCount = 0;
 
+    if (!string){
+        return string;
+    }
+
     string = String.prototype.replace.call(string, /~~~~.+?~~~~/g, function (match) {
         if (tokens.hasOwnProperty(match)){
             replaceCount++;

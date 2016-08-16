@@ -7,3 +7,16 @@ ledge-hanging:
     - Allow or disallow jumping off the ledge.
     - Allow or disallow shooting while holding the ledge.
     - Allow climbing the ledge even if it leads into a space shorter than the player - this might require crouching or a polymorphy power-up like [[abi:morph-ball]]
+
+spider-mode:
+  name: Spider Mode
+  description:
+    Allows the protagonist to climb walls and ceilings.
+  variants:
+    - Is free to use.
+    - Requires some kind of mana/stamina to use.
+    - Is time limited.
+    - Only works on certain types of walls/ceilings.
+    - Doesn't work on certain types of walls/ceilings.
+    - Being damaged releases the grip.
+    - Only works in a different form, eg. [[abi:morph-ball]].
