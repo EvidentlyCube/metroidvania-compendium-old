@@ -6,6 +6,10 @@ nes:
   name: Nintendo Entertainment System
   shortName: NES
   url: https://en.wikipedia.org/wiki/Nintendo_Entertainment_System
+snes:
+  name: Super Nintendo Entertainment System
+  shortName: SNES
+  url: https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System
 gb:
   name: Game Boy
   shortName: GB

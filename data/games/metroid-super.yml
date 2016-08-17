@@ -1,0 +1,192 @@
+metroid-super:
+  name: Super Metroid
+  series: metroid
+  date: 1994
+  description: |
+    #### Description:
+    A side-scroller platformer shooter.
+
+    #### Analysis:
+    Metroid: Zero Mission is a complete reimagination of the original metroid - it's technically a remake but it improves on every single aspect of the original. It's a very polished game and in terms of game design there are a few areas which are have to be explored further:
+
+     1. The whole stealth section which is an elaborate [mini-game](http://tvtropes.org/pmwiki/pmwiki.php/Main/MiniGame "Warning: TV Tropes Link!") yet at the same time is almost perfectly within the boundaries set by the main game - the player executes the same gameplay routines (traversing dangerous terrain and shooting at enemies) but the changed context and slight mechanics alterations make it into a very different game. There are only really two big accusations that can be made: the first enemy you encounter can't be fathomably avoided without raining an alarm; the sequence is a bit too long and repetetive.
+
+     2. By looking at the sequence breaks in the game it is very clear the game was consciously designed with them in mind (as opposed to Super Metroid which has a comparable amount of sequence breaks but it's arguable whether they were intended or not). Whether that's better than unintentional sequence breaks is a matter of discussion, but the less hardcore players will certainly appreciate the fact that they can't get (semi-)stuck by accidentally doing things out of order.
+  platforms:
+    - snes
+    - vc-3ds
+  buy:
+    vc-3ds: http://www.nintendo.com/games/detail/super-metroid-3ds
+  links:
+    Wikipedia: https://en.wikipedia.org/wiki/Super_Metroid
+    TV Tropes: http://tvtropes.org/pmwiki/pmwiki.php/VideoGame/SuperMetroid
+    Giant Bomb: http://www.giantbomb.com/super-metroid/3030-8292/
+    YouTube Longplay: https://www.youtube.com/watch?v=hNCs4yfSANo
+  isCompleted: false
+  abilities:
+    - name: Energy
+      ability: health
+      description: |
+        Starts at 99HP, damage is dealt by touching enemies and their projectiles and can be restored by drops left from killing the enemies. Losing all *Energy* results in death.
+      url: http://metroid.wikia.com/wiki/Energy
+
+    - name: Jump
+      ability: jump
+      description: A regular jump, available from the beginning of the game. Has two versions - regular jump and spin jump. The latter is executed when Samus jumps while running and allows for greater speed in the air. Firing the weapon while performing a spin jump ends it.
+      url: http://metroid.wikia.com/wiki/Spin_Jump
+
+    - name: Wall Jump
+      ability: wall-jump
+      description: Samus can perform the wall jump out of the box, by performing a spin jump near the wall and moving away from it while pressing the jump button. The jump is a regular spin jump and Samus can climb a single vertical column this way.
+      url: http://metroid.wikia.com/wiki/Wall_Jump
+
+    - name: Beam
+      ability: weapon
+      description: "Can be used to destroy enemies and blocks which unlock new passages."
+      url: http://metroid.wikia.com/wiki/Beam
+
+    - name: Morph Ball
+      ability: morph-ball
+      description: |
+        Makes Samus morph into a ball, effectively halving Samus's height, disabling [[abi:jump]] and [[abi:weapon]]. Allows passing through narrow passages.
+      url: http://metroid.wikia.com/wiki/Morph_Ball
+
+    - name: Missiles
+      ability: strong-weapon
+      description: Can be used to open red gates and deal more damage to enemies. They have limited ammo that is dropped by enemies and the ammo limit can be expanded.
+      url: http://metroid.wikia.com/wiki/Missile
+
+    - name: Missile Tank
+      ability: ammo-expansion
+      description: "Increases the missile limit."
+      url: http://metroid.wikia.com/wiki/Missile_Tank
+
+    - name: Bombs
+      ability: bombs
+      description: |
+        Can be placed in [[abi:morph-ball]] form and used to destroy specific types of blocks and to jump. If well timed it can be used to do the [infinite jump trick](https://www.youtube.com/watch?v=Qfmcm7hkXP4).
+      url: http://metroid.wikia.com/wiki/Bomb
+
+    - name: Energy Tank
+      ability: health-expansion
+      description: "Increases the maximum HP by 100, a total of 12 can be collected in various hidden places. On hard mode each tank increases the maximum HP by 50."
+      url: http://metroid.wikia.com/wiki/Energy_Tank
+
+    - name: Charge beam
+      ability: charge-weapon
+      description: Allows charging the beam to shoot stronger bullets. Some enemies can only be damaged by charged beam.
+      url: http://metroid.wikia.com/wiki/Charge_Beam
+
+    - name: Super Missiles
+      ability: strong-weapon
+      description: Even stronger than regular missiles, can destroy their own specific type of block and open green doors.
+      url: http://metroid.wikia.com/wiki/Super_Missile
+
+    - name: Super Missile Tank
+      ability: ammo-expansion
+      description: "Increases the super missile limit."
+      url: http://metroid.wikia.com/wiki/Missile_Tank
+
+    - name: Hi-Jump
+      ability: increased-jump-height
+      description: Increases Samus's jump height significantly. Additionally makes it possible to jump in Morph Ball form.
+      url: http://metroid.wikia.com/wiki/High_Jump_Boots
+
+    - name: Spazer Beam
+      ability: split-shot
+      description: Fires three beams parallel to each other, all three beams are treated as a single bullet.
+      url: http://metroid.wikia.com/wiki/Spazer_Beam
+
+    - name: Varia Suit
+      abilities:
+        - background-damage-ignore
+        - damage-reduction
+      description: |
+        - Mitigates damage taken from background heat.
+        - Additionally reduces damage taken from other sources by 50%
+      url: http://metroid.wikia.com/wiki/Varia_Suit
+
+    - name: Speed Booster
+      ability: running
+      description: |
+        - Allows Samus to reach a super speed after a short running start, during which she's invincible and damages/kills enemies.
+        - Allows destroying special blocks on touch.
+        - Continues mid-jump but landing ends the boost.
+        - Crouching allows to charge Shinespark.
+      url: http://metroid.wikia.com/wiki/Speed_Booster
+
+    - name: Shinespark
+      ability: infinite-dash
+      description: |
+        When Samus crouches during a Speed Booster run she then enters a state during which a shinespark can be executed - an infinite directional dash which destroys the same blocks as Speed Booster.  Executing Shinespark drains Samus's health.
+      url: http://metroid.wikia.com/wiki/Shinespark
+
+    - name: Ice Beam
+      ability: enemy-freeze
+      description: Allows freezing enemies and using them as platforms. It is required to kill some enemies in the late game.
+      url: http://metroid.wikia.com/wiki/Ice_Beam
+
+    - name: Reserve Tank
+      ability: health-reserve
+      description: Additional quasi-Energy Tank which can be activated automatically or manually.
+      url: http://metroid.wikia.com/wiki/Reserve_Tank
+      
+    - name: Power Bombs
+      ability: bombs
+      description: Ammo-limited super strong version of a bomb which destroys its own specific types of blocks and kills or damages all enemies on the screen. It can also open yellow gates.
+      url: http://metroid.wikia.com/wiki/Power_Bomb
+
+    - name: Power Bomb Tank
+      ability: ammo-expansion
+      description: Increases the power bomb limit.
+      url: http://metroid.wikia.com/wiki/Power_Bomb_Tank
+      
+    - name: Grapple Beam
+      ability: grappling-hook
+      description: Samus can fire the grappling hook in any direction, which then grabs the surface and allows her to swing left/right as well as to increase or decrease her distance from the hook. She can swing in circles. It's impossible to attack while swinging and releasing the hook conserves the momentum. Some blocks can only be destroyed by the grapple beam unlocking new places. Some enemies can also be grabbed and [one boss can be killed with grapple beam](https://www.youtube.com/watch?v=gcemRrXqCbE).
+      
+    - name: Wave Beam
+      ability: transparent-weapon
+      description: A beam that passess through walls and enemies. Due to its helical movement it also makes it easier to hit small targets.
+      url: http://metroid.wikia.com/wiki/Wave_Beam
+
+    - name: X-Ray Scope
+      ability: extra-vision
+      description: Shoots a thin cone of X-Ray Scope which shows which walls are fake and displays real type of destructible blocks.
+      url: http://metroid.wikia.com/wiki/X-Ray_Scope
+      
+    - name: Gravity Suit
+      abilities:
+       - fluid-ignore
+       - damage-reduction 
+      description: |
+        - Lets samus move freely underwater, perform [[abi:wall-jump]] without an issue, jump to the full height and run at full speed.
+        - Also gives resistance to almost all magma in the game. 
+        - Reduces damage by another 25% (combines with Varia Suit).
+      url: http://metroid.wikia.com/wiki/Gravity_Suit
+
+    - name: Space Jump
+      ability: infinite-jump
+      description: |
+        Allows jumping infinitely up but only when performing the spin jump. The jump has to be timed carefully otherwise it won't work.
+      url: http://metroid.wikia.com/wiki/Space_Jump
+
+    - name: Spring Ball
+      ability: special-jump
+      description: Allows jumping when in the [[abi:morph-ball]] fprm.
+      url: http://metroid.wikia.com/wiki/Spring_Ball
+
+    - name: Plasma Beam
+      ability: damage-upgrade
+      description: |
+        Increases damage and makes the beam go through multiple enemies.
+      url: http://metroid.wikia.com/wiki/Plasma_Beam
+
+    - name: Screw Attack
+      ability: touch-weapon
+      description: A touch attack which only works during spin jump, can destroy enemies and specific types of blocks.
+      url: http://metroid.wikia.com/wiki/Screw_Attack
+      
+    - name: Hyper Beam
+      ability: damage-upgrade
+      description: Acquired during the final boss encounter, lasts only for the next few minutes of the game, greatly increases damage, allows destroying shutters and single-shot kills all enemies.

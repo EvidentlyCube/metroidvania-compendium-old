@@ -19,6 +19,16 @@ health-expansion:
     - Might be in the form of a collectible power-up.
     - Might be awarded at specific plot-points.
 
+health-reserve:
+  name: Health Reserve
+  description: |
+    A single use mechanism which has to be used manually to restore health.
+  variants:
+    - Can be used automatically, effectively becoming [[abi:health-expansion]].
+    - Single use or multi use.
+    - Restored by collecting HP.
+    - Restored by buying/picking up a separate item.
+    
 damage-reduction:
   name: Damage Reduction
   description: |

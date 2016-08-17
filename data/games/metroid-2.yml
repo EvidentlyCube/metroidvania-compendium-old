@@ -14,11 +14,15 @@ metroid-2:
     There is also the problem known from the first game, an abundance of identical passages and chambers. This only gets worse by the fact that the locations do not exactly belong in a flat or sensible space - plotting the map onto paper results in rooms overlapping each other or being longer/shorter/bigger/smaller depending on which route you take. Both of those things are huge issues.
   platforms:
     - gb
+    - vc-wii
     - vc-3ds
+    - vc-wiiu
   buy:
+    vc-wii: http://www.nintendo.com/games/detail/WUE1-4fPdnQzop6b1XC8yD-2KyiI3LXh
     vc-3ds: http://www.nintendo.com/games/detail/ZJIPw1j3cMBl2wJie6zl65OMeIjZd6aA
+    vc-wiiu: http://www.nintendo.com/games/detail/AFZxlJ-lH5fU_h4Q79V3dOpdT9k4EU1N
   links:
-    Wikipedia: https://en.wikipedia.org/wiki/Metroid_II:_Return_of_Samus
+    Wikipedia: https://en.wikipedia.org/wiki/Super_Metroid
     TV Tropes: http://tvtropes.org/pmwiki/pmwiki.php/VideoGame/MetroidIIReturnOfSamus
     Giant Bomb: http://www.giantbomb.com/metroid-ii-return-of-samus/3030-5708/
     YouTube Longplay: https://www.youtube.com/watch?v=AF1C0xZxBOw

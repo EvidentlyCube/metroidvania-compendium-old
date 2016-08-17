@@ -5,3 +5,14 @@ enemy-counter:
   variants:
     - Limited only to a given type of enemies.
     - Limited only to current screen/level/world/planet.
+    
+extra-vision:
+  name: Extra Vision
+  description: |
+    Provides the player with additional visual information.
+  variants:
+    - Shows fake walls.
+    - Shows real type of blocks (eg. which can only be destroyed by a missile).
+    - Shows otherwise invisible enemies.
+    - Always active or toggleable.
+    - Activate and aim to only uncover a small portion of the world.

@@ -33,6 +33,11 @@ metroid-zero:
       ability: jump
       description: A regular jump, available from the beginning of the game. Has two versions - regular jump and spin jump. The latter is executed when Samus jumps while running and allows for greater speed in the air. Firing the weapon while performing a spin jump ends it.
       url: http://metroid.wikia.com/wiki/Spin_Jump
+      
+    - name: Wall Jump
+      ability: wall-jump
+      description: Samus can perform the wall jump out of the box, by performing a spin jump near the wall and moving away from it while pressing the jump button. The jump is a regular spin jump and Samus can climb a single vertical column this way.
+      url: http://metroid.wikia.com/wiki/Wall_Jump
 
     - name: Beam
       ability: weapon
@@ -79,7 +84,7 @@ metroid-zero:
     - name: Plasma Beam
       ability: damage-upgrade
       description: |
-        Increases damage and makes the beam go through multiple enemies. When first collected it's marked as *Unknown Item 1* and serves additionally as [[abi:key]]. The ability is activate and usable only in the final stretch of the game.
+        Increases damage and makes the beam go through multiple enemies. When first collected it's marked as *Unknown Item 1* and serves additionally as [[abi:key]]. The ability is active and usable only in the final stretch of the game.
       url: http://metroid.wikia.com/wiki/Plasma_Beam
 
     - name: Power Grip
@@ -96,7 +101,7 @@ metroid-zero:
     - name: Space Jump
       ability: infinite-jump
       description: |
-        Allows jumping infinitely up but only when performing the spin jump. When first collect it's marked as *Unknown Item 2* and serves additionally as [[abi:key]]. The ability is activate and usable only in the final stretch of the game.
+        Allows jumping infinitely up but only when performing the spin jump. When first collected it's marked as *Unknown Item 2* and serves additionally as [[abi:key]]. The ability is active and usable only in the final stretch of the game.
       url: http://metroid.wikia.com/wiki/Space_Jump
 
     - name: Speed Booster
@@ -145,7 +150,7 @@ metroid-zero:
 
     - name: Gravity Suit
       ability: fluid-ignore
-      description: Lets samus move freely underwater, perform [[abi:wall-jump]] without an issue, jump to the full height and run at full speed.
+      description: Lets samus move freely underwater, perform [[abi:wall-jump]] without an issue, jump to the full height and run at full speed. When first collected it's marked as *Unknown Item 3* and serves additionally as [[abi:key]]. The ability is active and usable only in the final stretch of the game.
       url: http://metroid.wikia.com/wiki/Gravity_Suit
 
     - name: Screw Attack
@@ -167,3 +172,8 @@ metroid-zero:
       ability: ammo-expansion
       description: Increases the power bomb limit.
       url: http://metroid.wikia.com/wiki/Power_Bomb_Tank
+      
+    - name: Unknown Items
+      ability: key
+      description: Collecting those allows Samus's beam to destroy special types of blocks bearing the unknown item's symbol.
+      url: http://metroid.wikia.com/wiki/Unknown_Item

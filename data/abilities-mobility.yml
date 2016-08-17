@@ -10,7 +10,7 @@ ledge-hanging:
 
 spider-mode:
   name: Spider Mode
-  description:
+  description: |
     Allows the protagonist to climb walls and ceilings.
   variants:
     - Is free to use.
@@ -20,3 +20,12 @@ spider-mode:
     - Doesn't work on certain types of walls/ceilings.
     - Being damaged releases the grip.
     - Only works in a different form, eg. [[abi:morph-ball]].
+    
+grappling-hook:
+  name: Grappling Hook
+  description: |
+    A hook the protagonist can fire which allows them to swing or climb surfaces and sometimes can double as a weapon.
+  variants:
+    - Hook hits the ceiling and pulls the protagonist on top of the target ceiling.
+    - Hook hits the surface and the player can swing around and get closer or further from the hook. Releasing conserves or not the momentum of the swing.
+    - Destroys special type of blocks after hitting them allowing to unlock new routes.
