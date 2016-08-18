@@ -2,6 +2,7 @@ var MarkdownParser = require('../MarkdownParser');
 var _ = require('lodash');
 var util = require('util');
 var fs = require('fs');
+var S = require('string');
 
 var console = require('../../console');
 var globalTokenReplacer = require('./../GlobalTokenReplacer');
@@ -12,7 +13,6 @@ var Category = require('../../model/Category');
 var Series = require('../../model/Series');
 var Credits = require('../../model/Credits');
 var Changelog = require('../../model/Changelog');
-
 
 var bodyHtml;
 
@@ -53,10 +53,22 @@ function loadTemplateHtml(){
 
 function renderPreface(){
     appendSectionStart('preface', 'Preface');
-    appendBody('<div class="preface-container">');
-    appendBody('~~~~PREFACE~~~~');
-    appendBody('</div>');
+    appendBody(getPrefaceSection(3, 'Introduction', '~~~~PREFACE-INTRODUCTION~~~~'));
+    appendBody(getPrefaceSection(3, 'What is Metroidvania', '~~~~PREFACE-WHAT-IS~~~~'));
+    appendBody(getPrefaceSection(3, 'How to contribute',
+        getPrefaceSection(4, 'Adding content', '~~~~PREFACE-CONTRIBUTE-CONTENT~~~~') +
+        getPrefaceSection(4, 'Providing template', '~~~~PREFACE-CONTRIBUTE-TEMPLATE~~~~')
+    ));
+    appendBody(getPrefaceSection(3, 'Roadmap', '~~~~PREFACE-ROADMAP~~~~'));
     appendSectionClosure();
+}
+
+function getPrefaceSection(hTag, header, body){
+    var slug = 'preface-' + S(header).slugify().s;
+    return util.format('<h%s><span id="%s" class="anchor"></span><a href="#%s">%s</a></h%s>', hTag, slug, slug, header, hTag)
+        + '<div class="preface-section">'
+        + body
+        + '</div>';
 }
 
 function renderCategories(){
@@ -95,13 +107,15 @@ function renderCategoryWrapper(depth) {
         console.log(2, util.format('Rendering category %s', category.name));
         appendBody("<div id='category-div-%s' class='category category-depth-%s'>", category.id, depth);
         appendBody("<h%s><span id='category-%s' class='anchor'></span><a href='#category-%s'>%s</a></h%s>", depth, category.id, category.id, category.name, depth);
-        appendBody("<p class='description'>%s</p>", category.description);
+        appendBody("<div class='category-description'>%s</div>", parseInline(category.description));
+        appendBody('<div class="category-body">');
         if (category.children.length > 0) {
             _.forEach(category.children, renderCategoryWrapper(depth + 1));
         } else if (category.abilities.length > 0) {
             _.forEach(category.abilities, renderAbilityWrapper(depth));
         }
-        bodyHtml += "</div>"
+        appendBody('</div>');
+        appendBody('</div>');
     }
 
     return renderCategory;
@@ -132,7 +146,7 @@ function renderAbilityWrapper(depth) {
         appendBody('</div>');
         appendBody('<div class="game-to-ability-list examples">');
         appendBody('<table>');
-        _.forEach(ability.gameLinks, renderGameWithAbilityWrapper(depth));
+        _.forEach(ability.getGamesSortedByName(), renderGameWithAbilityWrapper(depth));
         appendBody('</table>');
         appendBody('</div>');
         appendBody('<ul class="game-to-ability-list examples">');
@@ -178,7 +192,7 @@ function renderSeries(series){
     appendBody('<div class="series">');
     appendBody('<h2><span id="series-%s" class="anchor"></span><a href="#series-%s">%s</a></h2>', series.id, series.id, series.name);
     appendBody('<div class="series-body">');
-    _.forEach(series.games, renderGame);
+    _.forEach(series.getGamesSortedByDate(), renderGame);
     appendBody('</div>');
     appendBody('</div>');
 }
@@ -200,19 +214,19 @@ function renderCreditsRow(credits, index){
 }
 
 function parseBlock(string){
-    return MarkdownParser.parseBlock(linkTokenReplacer.replace(string));
+    return MarkdownParser.parseBlock(linkTokenReplacer.replace(globalTokenReplacer(string)));
 }
 function parseInline(string){
-    return MarkdownParser.parseInline(linkTokenReplacer.replace(string));
+    return MarkdownParser.parseInline(linkTokenReplacer.replace(globalTokenReplacer(string)));
 }
 function parseGuess(string){
-    return MarkdownParser.parseGuess(linkTokenReplacer.replace(string));
+    return MarkdownParser.parseGuess(linkTokenReplacer.replace(globalTokenReplacer(string)));
 }
 
 function appendSectionStart(sectionId, title){
     console.log(1, util.format('Rendering %s', title));
     appendBody('<div class="%s-container section-container">', sectionId);
-    appendBody('<h1><span id="%s" class="anchor"></span><a href="#%s">%s</a></h1>', sectionId, sectionId, title);
+    appendBody('<h2 class="section-header"><span id="%s" class="anchor"></span><a href="#%s">%s</a></h2>', sectionId, sectionId, title);
     appendBody('<div class="section-body">');
 }
 function appendSectionClosure(){

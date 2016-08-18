@@ -1,22 +1,8 @@
 @import '_vars';
 
 .preface-container{
-  padding-left: 20px;
-  h2{
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  p{
-    margin-bottom: 5px;
-  }
-
-  ul, ol{
-    padding-left: 30px;
-    margin-bottom: 10px;
-  }
-  li{
-    line-height: 24px;
+  .preface-section{
+    padding-left: $section-indent;
   }
   blockquote {
     background: #f9f9f9;
@@ -31,6 +17,7 @@
       font-style:normal;
       font-variant: small-caps;
       margin-top: 20px;
+      margin-bottom: 0;
     }
   }
   blockquote:before {

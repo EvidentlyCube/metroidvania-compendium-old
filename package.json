@@ -1,6 +1,6 @@
 {
     "name": "MetroidvaniaCompendium",
-    "version": "0.2.89",
+    "version": "0.2.102",
     "private": true,
     "scripts": {
         "start": "node ./bin/www"
@@ -23,5 +23,5 @@
         "string": "^3.3.1",
         "yamljs": "^0.2.8"
     },
-    "versionDate": "17 Aug 2016, 11:29:19"
+    "versionDate": "19 Aug 2016, 00:06:46"
 }

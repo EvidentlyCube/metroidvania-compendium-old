@@ -37,6 +37,18 @@ var Ability = function constructor(id, name, description, variants, category){
     /** @member {Array.<GameToAbility>} */
     this.gameLinks = [];
 
+    this.getGamesSortedByName = function(){
+        return this.gameLinks.slice().sort(_sort);
+
+        /**
+         * @param {GameToAbility} left
+         * @param {GameToAbility} right
+         */
+        function _sort(left, right){
+            return left.game.name > right.game.name ? 1 : 0;
+        }
+    };
+
     ASSERT(this.name, "Name is missing");
     ASSERT(this.description, "Description is missing");
 };

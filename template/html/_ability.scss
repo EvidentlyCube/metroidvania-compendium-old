@@ -1,0 +1,46 @@
+@import '_vars';
+
+.category-body,
+.ability-body{
+  padding-left: $section-indent;
+}
+
+.category-description{
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: $default-text-block-spacing;
+}
+
+.abilities-container .category,
+.category-body .ability{
+	margin-bottom: $default-text-block-spacing * 2;
+}
+
+.ability-body{
+  .variants-container{
+  	display: none;
+  	padding-left: $section-indent;
+    margin-bottom: $default-text-block-spacing;
+  	border-left: 20px solid bisque;
+
+  	span.variant {
+  		display: table;
+  		line-height: 23px;
+  		background: bisque;
+  		border-radius: 5px;
+  		padding: 2px 20px;
+  		width: auto;
+  		margin-bottom: 5px;
+  	}
+  	span.variant:last-child{
+  		margin-bottom: 0;
+  	}
+  }
+}
+
+.ability >h5{
+	background: #F0F0FF;
+	border-bottom: 1px solid #C0C0DF;
+	padding: 2px 0 2px 5px;
+	margin-bottom: 0;
+}

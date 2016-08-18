@@ -9,6 +9,7 @@ module.exports = {
 };
 
 function replace(string){
+    ASSERT(string !== null && string !== undefined, "String cannot be null!");
     return string.replace(/\[\[([^:]+):([^\]]+)\]\]/g, replaceCallback);
 }
 

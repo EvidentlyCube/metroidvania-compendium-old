@@ -31,6 +31,23 @@ var Series = function(id, name, description, wikiUrl){
 
     /** @member {Array.<Game>} */
     this.games = [];
+
+    this.getGamesSortedByDate = function(){
+        return this.games.slice().sort(_sort);
+
+        /**
+         * @param {Game} left
+         * @param {Game} right
+         */
+        function _sort(left, right){
+            var dateDelta = left.date - right.date;
+            if (dateDelta !== 0){
+                return dateDelta > 0 ? 1 : 0;
+            }
+
+            return left.name > right.name ? 1 : 0;
+        }
+    }
 };
 
 

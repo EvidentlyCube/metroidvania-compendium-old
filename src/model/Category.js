@@ -22,7 +22,7 @@ var Category = function constructor(id, name, parent, description){
     this.parent = parent;
 
     /** @member {string} */
-    this.description = description;
+    this.description = description ? description : "";
 
     /** @member {Array.<Category>} */
     this.children = [];

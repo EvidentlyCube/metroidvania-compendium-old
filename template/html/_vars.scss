@@ -1,2 +1,30 @@
+/**
+ h1 - Page title
+ h2 - Section header
+ h3 - Sub-section header big
+ h4 - Sub-section header small
+ h5 - Custom element header
+ h6 - Custom micro element header
+ */
+
+$navigationHeight: 50px;
+
 $container-bg: #DFDCE3;
+
+$section-indent: 18px;
+$section-vertical-spacing: 100px;
+
+$default-font-family-header: 'Monsterrat', 'calibri', 'Verdana', sans-serif;
+$header-font-size-h1: 36px;
+$header-font-size-h2: 32px;
+$header-font-size-h3: 28px;
+$header-font-size-h4: 24px;
+$header-font-size-h5: 20px;
+$header-font-size-h6: 16px;
 $header-color: #3d85c6;
+
+$default-font-family-body: 'Open Sans', 'Calibri', 'Verdana', sans-serif;
+$default-font-size-body: 13px;
+$default-line-height-body: 20px;
+$default-text-block-spacing: 12px;
+$default-list-indent: 30px;

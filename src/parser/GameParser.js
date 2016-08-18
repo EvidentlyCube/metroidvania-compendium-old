@@ -102,7 +102,7 @@ function parseAbilityRowWrapper(game){
         }
 
         _.forEach(abilityRow.abilities, function(ability){
-            console.log(3, util.format('Adding ability %s', abilityRow.ability));
+            console.log(4, util.format('Adding ability %s', ability));
             gameToAbility.addAbility(Ability.getById(ability))
         });
     }

@@ -4,9 +4,7 @@ author: Maurycy Zarzycki, Retrocade.net
 
 credits-description: |
   The following people are to be thanked for creating or helping in creating this document. With the exception of people who provided exceptional support it's in the order they were added:
-preface: |
-  ## [Introduction](#introduction)
-
+preface-introduction: |
   Hello and welcome to Metroidvania Ability Compendium - a community-driven resource for anyone who:
 
    - Wants to create their own Metroidvania game and seeks inspiration;
@@ -18,8 +16,7 @@ preface: |
 
    **Please be warned that this document contains spoilers.** Links between abilities and specific games are hidden behind buttons which unroll the necessary information.
 
-  ## [What is Metroidvania](#what-is-metroidvania)
-
+preface-what-is: |
   > Metroidvania games generally feature a large interconnected world map the player can explore, though access to parts of the world is often limited by doors or other portals that can only be opened after the player has acquired special items, tools, weapons or abilities within the game. Acquiring such improvements can also aid the player in defeating more difficult enemies and locating shortcuts and secret areas, and often includes retracing one's steps across the map.
   >
   > Source *[Wikipedia](https://en.wikipedia.org/wiki/Metroidvania)*
@@ -28,10 +25,7 @@ preface: |
   >
   > Source: *[TV Tropes](http://tvtropes.org/pmwiki/pmwiki.php/Main/Metroidvania)*
 
-  ## [How to contribute](#how-to-contribute)
-
-  ### [Adding content](#adding-content)
-
+preface-contribute-content: |
   1. If you know how to use [git](https://en.wikipedia.org/wiki/Git_(software)) and know how to read and modify [YAML](https://en.wikipedia.org/wiki/YAML):
      - Make a [fork of the repository](https://github.com/RetrocadeNet/metroidvania-compendium);
      - Clone the repository;
@@ -46,12 +40,10 @@ preface: |
      - Go to the [Issues tab](https://github.com/RetrocadeNet/metroidvania-compendium/issues) in the repository;
      - Post a new issue detailing what you'd like added;
 
-  ### [Providing template](#providing-template)
-
+preface-contribute-template: |
   If you're a capable designer who'd like to donate their time and abilities to support this project please either use [Issues tab](https://github.com/RetrocadeNet/metroidvania-compendium/issues) to notify me or send me an email directly.
 
-  ## [Roadmap](#roadmap)
-
+preface-roadmap: |
   1. **Version 1.0.0:**
      - All sections of the document contain information
      - The following games are filled: [[game:metroid-1]], Metroid 2, Super Metroid, Metroid Fusion and Metroid Zero Mission

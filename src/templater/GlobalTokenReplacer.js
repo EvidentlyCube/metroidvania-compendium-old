@@ -3,6 +3,7 @@ var console = require('../console');
 var plural = require('../plural');
 var packageJson = require('../../package.json');
 var linkTokenReplacer = require('./LinkTokenReplacer');
+var ASSERT = require('../assert');
 
 var util = require('util');
 var YAML = require('yamljs');
@@ -14,6 +15,7 @@ var lastConsoleDepth;
 module.exports = replace;
 
 function replace(string, customTokens) {
+    ASSERT(string !== null && string !== undefined, "String cannot be null!");
     if (typeof customTokens === "undefined"){
         customTokens = [];
     }
@@ -34,6 +36,7 @@ function replace(string, customTokens) {
         string = results.string;
     } while (results.replaceCount > 0);
 
+    ASSERT(string !== null && string !== undefined, "String became null!");
     return string;
 };
 
@@ -57,7 +60,10 @@ function replaceGlobalTokens(string, tokens) {
     var replaceCount = 0;
 
     if (!string){
-        return string;
+        return {
+            string: string,
+            replaceCount: replaceCount
+        }
     }
 
     string = String.prototype.replace.call(string, /~~~~.+?~~~~/g, function (match) {

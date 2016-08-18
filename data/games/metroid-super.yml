@@ -7,11 +7,9 @@ metroid-super:
     A side-scroller platformer shooter.
 
     #### Analysis:
-    Metroid: Zero Mission is a complete reimagination of the original metroid - it's technically a remake but it improves on every single aspect of the original. It's a very polished game and in terms of game design there are a few areas which are have to be explored further:
+    Super Metroid is often hailed as the best metroid and the best in the metroidvania genre. But there is one very specific aspect that ensured this game is still played to the death - sequence breaking. Where [[game:metroid-zero]] seems like it was engineered with sequence breaks in mind Super Metroid feels organic, as if they were not the intentions of the devs (which might as well be true, there are people who claim both) which also translated to many more ways to break the game. Low percent completion? [Check].(http://deanyd.net/sm/index.php?title=14%25) Reverse boss order? [Check].(http://deanyd.net/sm/index.php?title=Reverse_Boss_Order) Skip bosses? [Check](https://www.youtube.com/watch?v=uoUEX6wVRF0) and [check](https://www.youtube.com/watch?v=R3t8TIIj7IM).
 
-     1. The whole stealth section which is an elaborate [mini-game](http://tvtropes.org/pmwiki/pmwiki.php/Main/MiniGame "Warning: TV Tropes Link!") yet at the same time is almost perfectly within the boundaries set by the main game - the player executes the same gameplay routines (traversing dangerous terrain and shooting at enemies) but the changed context and slight mechanics alterations make it into a very different game. There are only really two big accusations that can be made: the first enemy you encounter can't be fathomably avoided without raining an alarm; the sequence is a bit too long and repetetive.
-
-     2. By looking at the sequence breaks in the game it is very clear the game was consciously designed with them in mind (as opposed to Super Metroid which has a comparable amount of sequence breaks but it's arguable whether they were intended or not). Whether that's better than unintentional sequence breaks is a matter of discussion, but the less hardcore players will certainly appreciate the fact that they can't get (semi-)stuck by accidentally doing things out of order.
+    Super Metroid is the to-go game to experience brilliant level design both in terms of fun factor for regular players and exploitability by pros.
   platforms:
     - snes
     - vc-3ds

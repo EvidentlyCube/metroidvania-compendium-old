@@ -51,7 +51,7 @@ var Game = function(id, name, description, series, date, isCompleted, links){
     this.series = series;
 
     /** @member {string} */
-    this.date = date;
+    this.date = parseInt(date);
 
     /** @member {boolean} */
     this.isCompleted = isCompleted;
