@@ -8,8 +8,19 @@ running:
     - Reset or continue running while jumping or after landing.
     - Allows destroying special block types.
 
-infinite-dash:
-  name: Infinite Dash
+dash:
+  name: Dash
+  description: |
+    Performs a fast axial (horizontal or vertical) movement, useful for closing small gaps when ceiling blocks jump, evading enemies or extending the range of the jump.
+  variants:
+    - Often limited only to horizontal movement, and vertical is or is not a separate power-up.
+    - Destroys specific types of blocks.
+    - Usable only from the ground or mid-jump too.
+    - Jumping mid-dash increases horizontal speed while mid-air.
+    - Protagonist is resistant to damage while dashing.
+
+endless-dash:
+  name: Endless Dash
   description: |
     A dash which continues until the player hits an obstacle.
   variants:

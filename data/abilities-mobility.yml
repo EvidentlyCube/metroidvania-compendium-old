@@ -1,3 +1,11 @@
+swimming:
+  name: Swimming
+  description: |
+    Allows the protagonist any kind of in-fluid mobility which is not just slowed down regular movement.
+  variants:
+    - Infinite jump as a form of swimming.
+    - Gravityless omni-directional movement.
+
 ledge-hanging:
   name: Ledge Hanging
   description: |

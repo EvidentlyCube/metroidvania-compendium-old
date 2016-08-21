@@ -1,8 +1,8 @@
 metroid:
-    name: Metroid Series
-    desc: |
-        Metroid (**Japanese**: メトロイド **Hepburn**: Metoroido) is a science fiction action-adventure video game series created by Nintendo.
-    wikiUrl: "https://en.wikipedia.org/wiki/Metroid"
+  name: Metroid Series
+  desc: |
+    Metroid (**Japanese**: メトロイド **Hepburn**: Metoroido) is a science fiction action-adventure video game series created by Nintendo.
+  wikiUrl: "https://en.wikipedia.org/wiki/Metroid"
 #zelda:
 #    name: Legend of Zelda Series
 #    desc: |
@@ -18,8 +18,7 @@ metroid:
 #  desc: |
 #    <TODO>
 #  wikiUrl: <TODO>
-#other:
-#  name: Individual Games
-#  desc: |
-#    <TODO>
-#  wikiUrl: <TODO>
+other:
+  name: Individual Games
+  desc: |
+    List of individual games which do not form any series

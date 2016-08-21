@@ -1,0 +1,128 @@
+esa:
+  name: Environmental Station Alpha
+  series: other
+  date: 2002
+  description: |
+    #### Description:
+    A metroidvania platformer shooter about a robot dispatched to explore a space station which served as a preserve for unique lifeforms and environments. The game features a very lo-res art style.
+
+    #### Analysis:
+    The main features of ESA are solid gameplay, a large quantity of bosses and vast amount of metapuzzles which can probably take certain players about as much time as finishing the game the normal way. Not many things can be said about this game's design because there aren't really any extraordinary things that would make it exceptionally unique, which in no way means it's a bad game - to the contrary, the gameplay is very solid and well polished.
+  platforms:
+    - windows
+    - macos
+  buy:
+    steam: http://store.steampowered.com/app/350070/
+    humble-store: https://www.humblebundle.com/store/p/environmentalstation_alpha_storefront
+  links:
+    Homepage: http://www.hempuli.com/esa/
+    TV Tropes: http://tvtropes.org/pmwiki/pmwiki.php/VideoGame/EnvironmentalStationAlpha
+    Giant Bomb: http://www.giantbomb.com/environmental-station-alpha/3030-39548/
+  isCompleted: true
+  abilities:
+    - name: Health
+      ability: health
+      description: |
+        Starts at 10HP, damage is dealt by environment, touching enemies and their projectiles. Health is only ever restored when collecting Health Tanks, on save points and specially designated Health Stations.
+
+    - name: Jump
+      ability: jump
+      description: |
+        Available from the very beginning, allows the protagonist to jump 2 tiles high.
+
+    - name: Swimming
+      ability: swimming
+      description: |
+        Available from the very beginning, the player can jump when submerged even without touching the ground.
+
+    - name: Shot
+      ability: weapon
+      description: |
+        Default and only weapon, can shot in 4 primary directions and can both damage enemies and destroy certain types of blocks.
+
+    - name: Map
+      ability: map
+      description: |
+        Accessible from the very beginning, a dynamic map that fills itself as the player progresses through the game.
+
+    - name: Health Tank
+      ability: health-expansion
+      description: |
+        Increases the protagonist's health by 1-4 HP
+
+    - name: Jump Booster
+      ability: secondary-jumps
+      description: |
+        Allows the protagonist to jump again in mid-air.
+
+    - name: Hookshot
+      ability: grappling-hook
+      description: |
+        The hook fires diagonally up and attaches itself to a wall or a ceiling. Afterwards the player makes a fast, roughly 90&deg; arc in the air and is released conserving the momentum. The farther the player is from the grapple point the faster they'll move, so falling down from great distance and grappling a wall can result in flying super high.
+
+    - name: Teleport Access
+      ability: teleportation
+      description: |
+        Allows the protagonist to use teleporters and teleport between known ones. Teleporter becomes known if its map-tile is uncovered. Only allows teleporting from a teleporter.
+
+    - name: Propellor
+      ability: swimming
+      description: |
+        Disabled gravity underwater and enables omni-direction movement. Also increases protagonist's speed when submerged.
+
+    - name: Charge Shot
+      abilities:
+        - charge-weapon
+        - secondary-destroyer
+      description: |
+        Allows charging the weapon which deals more damage and destroys blue blocks.
+
+    - name: Dash Booster H
+      ability: dash
+      description: |
+        Allows to perform a horizontal dash which destroys red blocks and makes the protagonist invulnerable for the duration and distance of the dash. The action is almost instantaneous.
+
+    - name: Heat-Resistant Suit
+      ability: background-damage-ignore
+      description: |
+        Disables the background damage from hot areas.
+
+    - name: Keycard
+      ability: key
+      description: |
+        Passively disabled all golden blocks in close proximity to the player.
+
+    - name: Dash Booster V
+      ability: dash
+      description: |
+        Makes the dash also work vertically, which increases protagonist's possible jump height and allows destroying red blocks which can't be accessed from a side.
+
+    - name: Rough Map
+      ability: map
+      description: |
+        Marks a huge amount of places on the Map, showing the player they can access them.
+
+    - name: Triple Shot
+      ability: split-shot
+      description: |
+        Splits the main weapon into three beams, 45&deg; to each other, each dealing separate damage.
+
+    - name: Plasma Shield
+      ability: aura-damage
+      description: |
+        Three plasma spheres surround the player and slightly damage enemies on touch every few ticks. It synergizes with dash, allowing to deal damage to enemies by dashing through them.
+
+    - name: Supercharged Module
+      ability: charge-weapon
+      description: |
+        Makes every shot a charged shot.
+
+    - name: Dash Booster X
+      ability: dash
+      description: |
+        Allows the protagonist to perform the dash moves in mid-air without having to land in between uses, effectively giving the dash equivalent of [[abi:infinite-jump]].
+
+    - name: The Bike
+      ability: running
+      description:
+        Increases horizontal movement of the protagonist and makes them ride a very rad bike.

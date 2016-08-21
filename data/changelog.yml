@@ -1,5 +1,11 @@
-- date: 16 Aug 2016
+- date: 19 Aug 2016
   version: ~~~~VERSION~~~~
+  changes: |
+    - Finished [[game:metroid-fusion]], [[game:metroid-super]], [[game:esa]]
+    - Rewrote CSS for the page to make it more streamlined and changed a couple of small things in the layout
+    - Updates to [[game:metroid-zero]]
+- date: 16 Aug 2016
+  version: 0.2.84 (ALPHA)
   changes: |
     - Finished [[game:metroid-zero]], [[game:metroid-2]]
     - Replace game/ability example lists with tables

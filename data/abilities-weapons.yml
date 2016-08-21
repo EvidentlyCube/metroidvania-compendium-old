@@ -61,9 +61,26 @@ damage-upgrade:
    - Allow damaging/defeating certain types of enemies.
    - Projectile goes through enemies, damaging each of them.
 
+blast-shot:
+  name: Blast Shot
+  description: |
+    Any kind of weapon which generates a huge blast upon hitting the target.
+  variants:
+    - A separate weapon like a grenade or missile launcher.
+    - An additional effect to [[abi:charge-weapon]].
+    - Carries on additional effect properties of the weapon, eg. [[abi:enemy-freeze]] or [[abi:secondary-destroyer]].
+
 paralyzer:
   name: Paralyzer
   description: |
     A weapon which paralyzes enemies rendering them immobile for a duration of time.
   variants:
     - Prevents enemies from spotting the protagonist and triggering an alarm.
+
+aura-damage:
+  name: Aura Damage
+  description: |
+    Some form of proximity damage dealt to enemies.
+  variants:
+    - A passive aura that deals damage every few ticks.
+    - One or multiple drones which circle the player and deal damage on touch.

@@ -30,3 +30,19 @@ vc-wiiu:
   name: Virtual Console for Wii U
   shortName: VC-WIIU
   url: https://en.wikipedia.org/wiki/Virtual_Console#Wii_U
+windows:
+  name: Windows
+  shortName: WIN
+  url: https://en.wikipedia.org/wiki/Microsoft_Windows
+macos:
+  name: Mac OS
+  shortName: MAC
+  url: https://en.wikipedia.org/wiki/Mac_OS
+steam:
+  name: Steam
+  shortName: STEAM
+  url: https://en.wikipedia.org/wiki/Steam_(software)
+humble-store:
+  name: Humble Store
+  shortName: HUMBLE
+  url: https://en.wikipedia.org/wiki/Humble_Store

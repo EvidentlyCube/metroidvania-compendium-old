@@ -45,3 +45,14 @@ ammo-expansion:
   variants:
     - Increases ammo for a single weapon type.
     - Increases ammo for all weapon types.
+
+invulnerability:
+  name: Invulnerability
+  description: |
+    Gives the player complete invulnerability to certain types of damage and attacks.
+  variants:
+    - Invulnerable to touch attacks of one/some/all enemies.
+    - Invulnerable to projectiles of one/some/all enemies.
+    - Complete invulnerability to everything.
+    - Timed or permanent.
+    - One use or rechargable.

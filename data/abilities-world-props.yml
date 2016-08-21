@@ -1,3 +1,13 @@
+map:
+  name: Map
+  description: |
+    A static or dynamic map of the worlgame d.
+  variants:
+    - A static map contains never changes its information.
+    - A dynamic map fills itself as the player explores new places and optionally changes itself based on the changes in the game's world.
+    - Can be in the form of a collectible which fills the dynamic map.
+    - Can be very precise or a very rough approximation of the game world.
+
 enemy-counter:
   name: Enemy Counter
   description: |
@@ -16,3 +26,13 @@ extra-vision:
     - Shows otherwise invisible enemies.
     - Always active or toggleable.
     - Activate and aim to only uncover a small portion of the world.
+
+teleportation:
+  name: Teleportation
+  description: |
+    Allows the player to teleport to known places as a shortcut. In rare cases it might serve as a way to unlock new routes.
+  variants:
+    - Teleport from one known teleporter to another known one.
+    - Teleport to unknown teleporters.
+    - Teleport from any place to another teleporter.
+    - Teleporters become "known" once activated or once seen.

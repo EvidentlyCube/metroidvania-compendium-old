@@ -4,20 +4,25 @@ var collection = [];
  * @typedef {Object} CreditsRow
  * @property {string} name
  * @property {string} contribution
+ * @property {string} url
  */
 
 /**
  * @class Credits
  * @param {string} name
  * @param {string} contribution
+ * @param {string} url
  * @constructor
  */
-var Credits = function constructor(name, contribution){
+var Credits = function(name, contribution, url){
     /** @member {string} */
     this.name = name;
 
     /** @member {string} */
     this.contribution = contribution;
+
+    /** @member {string} */
+    this.url = url;
 };
 
 

@@ -1,5 +1,7 @@
 var util = require('util');
-var MarkdownIt = require('markdown-it')();
+var MarkdownIt = require('markdown-it')({
+    html: true
+});
 var MarkdownItNamedHeaders = require('markdown-it-named-headers');
 
 MarkdownIt.use(namedHeadersPlugin());

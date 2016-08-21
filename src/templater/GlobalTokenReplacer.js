@@ -67,6 +67,7 @@ function replaceGlobalTokens(string, tokens) {
     }
 
     string = String.prototype.replace.call(string, /~~~~.+?~~~~/g, function (match) {
+        match = match.toUpperCase();
         if (tokens.hasOwnProperty(match)){
             replaceCount++;
             return tokens[match];

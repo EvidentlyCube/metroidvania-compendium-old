@@ -114,7 +114,7 @@ metroid-zero:
       url: http://metroid.wikia.com/wiki/Speed_Booster
 
     - name: Shinespark
-      ability: infinite-dash
+      ability: endless-dash
       description: |
         When Samus crouches during a Speed Booster run she then enters a state during which a shinespark can be executed - an infinite directional dash which destroys the same blocks as Speed Booster.
       url: http://metroid.wikia.com/wiki/Shinespark

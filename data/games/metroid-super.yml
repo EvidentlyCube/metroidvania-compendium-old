@@ -12,9 +12,13 @@ metroid-super:
     Super Metroid is the to-go game to experience brilliant level design both in terms of fun factor for regular players and exploitability by pros.
   platforms:
     - snes
+    - vc-wii
     - vc-3ds
+    - vc-wiiu
   buy:
+    vc-wii: http://www.nintendo.com/games/detail/WUE1-4fPdnQzop6b1XC8yD-2KyiI3LXh
     vc-3ds: http://www.nintendo.com/games/detail/super-metroid-3ds
+    vc-wiiu: http://www.nintendo.com/games/detail/AFZxlJ-lH5fU_h4Q79V3dOpdT9k4EU1N
   links:
     Wikipedia: https://en.wikipedia.org/wiki/Super_Metroid
     TV Tropes: http://tvtropes.org/pmwiki/pmwiki.php/VideoGame/SuperMetroid
@@ -114,7 +118,7 @@ metroid-super:
       url: http://metroid.wikia.com/wiki/Speed_Booster
 
     - name: Shinespark
-      ability: infinite-dash
+      ability: endless-dash
       description: |
         When Samus crouches during a Speed Booster run she then enters a state during which a shinespark can be executed - an infinite directional dash which destroys the same blocks as Speed Booster.  Executing Shinespark drains Samus's health.
       url: http://metroid.wikia.com/wiki/Shinespark

@@ -32,7 +32,7 @@ bombs:
 secondary-destroyer:
   name: Secondary Destroyer
   description: |
-    A catch-all for all other generic types of attacks which unlock new routes by being the only tool to destroy a block/enemy, but the way they are used is not sufficiently different/unique to warrant a separate category.
+    A catch-all for all other generic types of attacks which unlock new routes by being the only tool to destroy a block/enemy, but the way they are used is too specific or is a variant.
   variants:
    - A touch attack.
    - A touch attack which only works while jumping.

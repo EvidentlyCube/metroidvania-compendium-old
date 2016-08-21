@@ -30,11 +30,12 @@ function loadData(){
     return data;
 }
 
-/**
-* @param {CreditsRow} row
-*/
+ /**
+  * @param {CreditsRow} row
+  * @param {number} key
+  */
  function parseRow(row, key){
     console.log(2, util.format("Parsing row #%s: %s", key, row.name));
-    var credits = new Credits(row.name, row.contribution);
+    var credits = new Credits(row.name, row.contribution, row.url);
     Credits.addToCollection(credits);
 }

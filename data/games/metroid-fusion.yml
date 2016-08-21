@@ -1,0 +1,190 @@
+metroid-fusion:
+  name: Metroid Fusion
+  series: metroid
+  date: 2002
+  description: |
+    #### Description:
+    A side-scroller platformer shooter.
+
+    #### Analysis:
+
+    #### Notes:
+    3DS version of this game was only available for [Nintendo 3DS Ambassador Program](http://nintendo.wikia.com/wiki/Nintendo_3DS_Ambassador_Program) participants.
+  platforms:
+    - gba
+    - vc-wiiu
+    - vc-3ds
+  buy:
+    vc-wiiu: http://www.nintendo.com/games/detail/WVDnG9lHsD6Nz0nmk97dPyRZk6CJct3A
+  links:
+    Wikipedia: https://en.wikipedia.org/wiki/Metroid_Fusion
+    TV Tropes: http://tvtropes.org/pmwiki/pmwiki.php/VideoGame/MetroidFusion
+    Giant Bomb: http://www.giantbomb.com/metroid-fusion/3030-10323/
+    YouTube Longplay: https://www.youtube.com/watch?v=YFKusOerZDA
+  isCompleted: true
+  abilities:
+    - name: Energy
+      ability: health
+      description: "Starts at 99HP, damage is dealt by touching enemies and their projectiles and can be restored by drops left from killing the enemies. Losing all *Energy* results in death."
+      url: http://metroid.wikia.com/wiki/Energy
+
+    - name: Jump
+      ability: jump
+      description: A regular jump, available from the beginning of the game. Has two versions - regular jump and spin jump. The latter is executed when Samus jumps while running and allows for greater speed in the air. Firing the weapon while performing a spin jump ends it.
+      url: http://metroid.wikia.com/wiki/Spin_Jump
+      
+    - name: Wall Jump
+      ability: wall-jump
+      description: Samus can perform the wall jump out of the box, by performing a spin jump near the wall and moving away from it while pressing the jump button. The jump is a regular spin jump but Samus is unable to climb a single vertical column, beacuse she's pushed away from the wall far enough to always come back to it a little bit lower than she was previously.
+      url: http://metroid.wikia.com/wiki/Wall_Jump
+
+    - name: Power Grip
+      ability: ledge-hanging
+      description: |
+        Allows grabbing the ledges, climb them up, jump to the side or down and fire when hanging. Can climb up into 1-tile tall passages by immeddiately morphing into [[abi:morph-ball]]. This ability is available to Samus from the beginning of the game.
+      url: mobility
+
+    - name: Beam
+      ability: weapon
+      description: Can be used to destroy enemies and blocks which unlock new passages.
+      url: http://metroid.wikia.com/wiki/Beam
+
+    - name: Morph Ball
+      ability: morph-ball
+      description: |
+        Makes Samus morph into a ball, effectively halving Samus's height, disabling [[abi:jump]] and [[abi:weapon]]. Allows passing through narrow passages. Allows jumping when Hi-Jump is collected.
+      url: http://metroid.wikia.com/wiki/Morph_Ball
+
+    - name: Missiles
+      ability: strong-weapon
+      description: Can be used to open red gates and deal more damage to enemies. They have limited ammo that is dropped by enemies and the ammo limit can be expanded. Allows destroying [green Gerons](http://metroid.wikia.com/wiki/Geron) and unlock new routes.
+      url: http://metroid.wikia.com/wiki/Missile
+
+    - name: Missile Tank
+      ability: ammo-expansion
+      description: "Increases the missile limit."
+      url: http://metroid.wikia.com/wiki/Missile_Tank
+
+    - name: Energy Tank
+      ability: health-expansion
+      description: Increases the maximum HP by 100, a total of 12 can be collected in various hidden places.
+      url: http://metroid.wikia.com/wiki/Energy_Tank
+
+    - name: Charge beam
+      ability: charge-weapon
+      description: Allows charging the beam to shoot stronger bullets. Some enemies can only be damaged by charged beam.
+      url: http://metroid.wikia.com/wiki/Charge_Beam
+
+    - name: Bombs
+      ability: bombs
+      description: |
+        Can be placed in [[abi:morph-ball]] form and used to destroy specific types of blocks and to jump.
+      url: http://metroid.wikia.com/wiki/Bomb
+
+    - name: Hi-Jump
+      ability: increased-jump-height
+      description: Increases Samus's jump height significantly.
+      url: http://metroid.wikia.com/wiki/High_Jump_Boots
+
+    - name: Jumpball
+      ability: special-jump
+      description: Increases Samus's jump height significantly.
+      url: http://metroid.wikia.com/wiki/Jumpball
+
+    - name: Speed Booster
+      ability: running
+      description: |
+        - Allows Samus to reach a super speed after a short running start, during which she's invincible and damages/kills enemies.
+        - Allows destroying special blocks on touch.
+        - Continues mid-jump but landing ends the boost.
+        - Crouching allows to enter Shinespark.
+      url: http://metroid.wikia.com/wiki/Speed_Booster
+
+    - name: Shinespark
+      ability: endless-dash
+      description: |
+        When Samus crouches during a Speed Booster run she then enters a state during which a shinespark can be executed - an infinite directional dash which destroys the same blocks as Speed Booster.
+      url: http://metroid.wikia.com/wiki/Shinespark
+
+    - name: Super Missiles
+      abilities:
+        - strong-weapon
+        - damage-upgrade
+      description: Triples the missile damage and allows destroying [purple Gerons](http://metroid.wikia.com/wiki/Geron) effectively unlocking new routes.
+      url: http://metroid.wikia.com/wiki/Super_Missile
+
+    - name: Varia Suit
+      abilities:
+        - background-damage-ignore
+        - damage-reduction
+        - invulnerability
+      description: |
+        - Mitigates damage taken from superheated and sub-zero rooms.
+        - Allows Samus to safely absorm [Blue X](http://metroid.wikia.com/wiki/Blue_X#Blue_X) without taking damage.
+        - Reduces damage taken from all sources by 40%
+      url: http://metroid.wikia.com/wiki/Varia_Suit
+
+    - name: Ice Missiles
+      abilities:
+        - enemy-freeze
+        - damage-upgrade
+      description: Makes the missiles freeze enemies on hit and increases damage by 33%.
+      url: http://metroid.wikia.com/wiki/Ice_Missile
+
+    - name: Wide Beam
+      ability: split-shot
+      description: Splits the beam into three parallel beams, each of them treated as separate projectile. ~~~~VERIFY-INFO~~~~
+      url: http://metroid.wikia.com/wiki/Wide_Beam
+
+    - name: Power Bombs
+      abilities:
+        - bombs
+        - blast-shot
+      description: Ammo-limited super strong version of a bomb which destroys its own specific types of blocks and kills or damages all enemies on the screen. Allows destroying [cyan Gerons](http://metroid.wikia.com/wiki/Geron) effectively unlocking new routes
+      url: http://metroid.wikia.com/wiki/Power_Bomb
+
+    - name: Power Bomb Tank
+      ability: ammo-expansion
+      description: Increases the power bomb limit.
+      url: http://metroid.wikia.com/wiki/Power_Bomb_Tank
+
+    - name: Space Jump
+      ability: infinite-jump
+      description: |
+        Allows jumping infinitely up but only when performing the spin jump.
+      url: http://metroid.wikia.com/wiki/Space_Jump
+
+    - name: Plasma Beam
+      ability: damage-upgrade
+      description: |
+        Increases damage and makes the beam go through multiple enemies.
+      url: http://metroid.wikia.com/wiki/Plasma_Beam
+
+    - name: Gravity Suit
+      ability: fluid-ignore
+      description: Lets samus move freely underwater, perform [[abi:wall-jump]] without an issue, jump to the full height and run at full speed.
+      url: http://metroid.wikia.com/wiki/Gravity_Suit
+
+    - name: Diffusion Missile
+      abilities:
+        - damage-upgrade
+        - blast-shot
+      description:
+        Increases damage of all missiles by 12.5% and allows charging the missiles - fully charged creates a huge blast encompassing about the whole screen, freezing everythign it touches (it carries on the properties of the missile launcher).
+
+    - name: Wave Beam
+      ability: transparent-weapon
+      description: A beam that passess through walls and enemies.
+      url: http://metroid.wikia.com/wiki/Wave_Beam
+
+    - name: Screw Attack
+      abilities:
+        - secondary-destroyer
+        - touch-weapon
+      description: A touch attack which only works during spin jump, can destroy enemies and specific types of blocks.
+      url: http://metroid.wikia.com/wiki/Screw_Attack
+
+    - name: Ice Beam
+      ability: damage-upgrade
+      description: Unlocked at the very end of the game, allows defeating [Omega Metroid](http://metroid.wikia.com/wiki/Omega_Metroid).
+      url: http://metroid.wikia.com/wiki/Ice_Beam

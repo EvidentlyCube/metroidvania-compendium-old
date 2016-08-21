@@ -210,7 +210,7 @@ function renderGame(game){
  */
 function renderCreditsRow(credits, index){
     console.log(2, util.format('Rendering credits #%s', index));
-    appendBody('<li><strong>%s</strong> - %s</li>', credits.name, credits.contribution)
+    appendBody('<li><a href="%s"><strong>%s</strong></a> - %s</li>', credits.url, credits.name, credits.contribution)
 }
 
 function parseBlock(string){
