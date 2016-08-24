@@ -1,5 +1,8 @@
-- date: 19 Aug 2016
+- date: 25 Aug 2016
   version: ~~~~VERSION~~~~
+  changes: |
+- date: 25 Aug 2016
+  version: 0.2.141
   changes: |
     - Finished [[game:metroid-fusion]], [[game:metroid-super]], [[game:esa]]
     - Rewrote CSS for the page to make it more streamlined and changed a couple of small things in the layout
